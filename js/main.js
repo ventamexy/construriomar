@@ -16,9 +16,10 @@ $(function () {
     $("#filtros a").on("click", function () {
         return $("#filtros a").removeClass("activo"), $(this).addClass("activo"),
             $(".registrados tbody tr").hide(), "pagados" == $(this).attr("id") ? $(".registrados tbody tr.pagado").show() : $(".registrados tbody tr.no_pagado").show(), !1
-    }), $(".nombre-sitio").lettering(), $('body.conferencia .navegacion-principal a:contains("Conferencia")').addClass("activo"), $('body.calendario .navegacion-principal a:contains("Calendario")').addClass("activo"), $('body.invitados .navegacion-principal a:contains("Invitados")').addClass("activo"); var n = $(window).height(),
+    }), $(".nombre-sitio").lettering(), $('body.conferencia .navegacion-principal a:contains("Conferencia")').addClass("activo"), $('body.calendario .navegacion-principal a:contains("Calendario")').addClass("activo"), $('body.invitados .navegacion-principal a:contains("Invitados")').addClass("activo"); 
+    // var n = $(window).height(),
 
-        a = $(".barra").innerHeight();
+        // a = $(".barra").innerHeight();
 
     // $(window).scroll(function () {
     //     $(window).scrollTop() > n ? ($(".barra")
@@ -33,7 +34,19 @@ $(function () {
 
 
 
+let ubicacionPrincipal = window.pageYOffset;
 
+window.onscroll = function(){
+    let Desplazamiento_actual = window.pageYOffset;
+    if(ubicacionPrincipal >= Desplazamiento_actual){
+        document.getElementById('navbar').style.top = '0';
+    } 
+    else {
+        document.getElementById('navbar').style.top = '-100px'
+    }
+    ubicacionPrincipal =Desplazamiento_actual;
+    // console.log(ubicacionPrincipal);
+}
 
 
 

@@ -3,17 +3,16 @@
     max-width: 100%;
     position: relative;
   }  
+  
   .carousel .carousel__item,
   .carousel .carousel__item--hidden {
     display: none;
   }
   
   .carousel .carousel__item img {
-    width: 500%;
-    max-width: 100%;
     height: auto;
+    width: 100%;
   }
-  
   .carousel .carousel__item--visible {
     display: block;
     animation: fadeVisibility 0.5s;

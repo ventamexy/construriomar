@@ -21,7 +21,7 @@ html {
   --primario:var(--oscuro);
   --secundario: #0097A7;
   --gris: #757575;
-  --oscuro: #a10909;
+  --oscuro: #0976a1af;
 }
 
 /*
@@ -178,6 +178,8 @@ h3 {
   margin: 0;
   margin-bottom: 2em;
 }
+
+
 
 .button {
   background-color: #b8b530;
@@ -390,7 +392,7 @@ h1.nombre-sitio {
 /** Barra **/
 
 div.barra {
-  background-color: #000000;
+  background-color: #054970;
   padding: 21px 0;
   
 }
@@ -440,7 +442,7 @@ nav.navegacion-principal a {
 }
 
 nav.navegacion-principal a:hover {
-  background-color: #a10909;
+  background-color: #03173d52;
 }
 
 /* nav.navegacion-principal a:last-child {
@@ -895,7 +897,7 @@ footer.info-testimonial img {
 
 footer.info-testimonial cite {
   text-align: left;
-  color: #b8b530;
+  color: #054970;
   text-transform: uppercase;
   font-size: 12px;
   padding-top: 20px;
@@ -962,7 +964,7 @@ div.cuenta-regresiva ul li {
 /** Footer **/
 
 footer {
-  background-color: #353535;
+  background-color: #4b4b4b;
   padding-top: 40px;
   margin-top: 20px;
 }
@@ -988,7 +990,7 @@ footer h3 {
 }
 
 footer h3 span {
-  color: #b8b530;
+  color: #00a2ff;
 }
 
 footer .ultimos-tweets li {
@@ -1656,3 +1658,4 @@ div.espaciado {
   text-align: justify;
   font-size: medium;
 }
+
