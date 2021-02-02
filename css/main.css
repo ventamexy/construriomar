@@ -173,7 +173,7 @@ h2::after {
 
 h3 {
   font-size: 1.8em;
-  color: #b8b530;
+  color: #00a2ff;
   font-family: 'PT Sans', sans-serif;
   margin: 0;
   margin-bottom: 2em;
@@ -806,7 +806,7 @@ div.tabla-precio ul li:before {
   vertical-align: top;
   padding: 0 5px;
   font-size: 20px;
-  color: green;
+  color: rgb(201, 2, 2);
   -webkit-font-smoothing: antialiased;
   content: '\f00c';
 }
