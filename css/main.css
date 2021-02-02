@@ -779,15 +779,15 @@ ul.lista-precios>li {
 
 div.tabla-precio {
   border: 1px solid #e1e1e1;
-  background-color: rgb(0, 60, 81);
-  padding: 40px 0;
+  background-color: rgb(255, 255, 255);
+  /* padding: 40px 0; */
   text-align: center;
   transition: all .3s ease;
 }
 
 div.tabla-precio:hover {
   transform: scale(1.1);
-  border: 1px solid #b8b530;
+  border: 1px solid #ffffff;
   box-shadow: 0px 0px 50px #666;
 }
 
@@ -796,7 +796,7 @@ div.tabla-precio ul li {
   font-size: 14px;
   margin-bottom: 20px;
   text-transform: uppercase;
-  color: #ffffff;
+  color: #000000;
   line-height: 26px;
 }
 

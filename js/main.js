@@ -6,7 +6,7 @@ if (document.getElementById('mapa')) {
 
     L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png').addTo(map);
 
-    L.marker([17.960890, -102.195890]).addTo(map).bindPopup('Contabilizate').openPopup();
+    L.marker([17.960890, -102.195890]).addTo(map).bindPopup('ConstruRioMar').openPopup();
     // .bindTooltip('GDLWebCamp 2018, Boletos ya disponibles')
     // .openTooltip();
 }

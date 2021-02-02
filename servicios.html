@@ -18,19 +18,18 @@
         integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
     <link href="https://fonts.googleapis.com/css?family=Open+Sans|Oswald|PT+Sans" rel="stylesheet">
 
-
+    <link rel="stylesheet" href="css/colorbox.css">
 
     <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/acordion.css">
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
 </head>
 
-<body class="calendario">
+<body class="invitados">
     <!--[if lt IE 8]>
-<p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
-<![endif]-->
-
-
+            <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
 
     <div class="barra fixed">
         <div class="contenedor clearfix">
@@ -48,8 +47,9 @@
 
             <nav class="navegacion-principal clearfix">
                 <a href="nosotros.html">Nosotros</a>
-                <a href="anuncios.html">anuncios</a>
-                <a href="servicios.html">Servicios</a>
+                <a href="servicios.html">servicios</a>
+                <!-- <a href="anuncios.html">anuncios</a> -->
+                <a href="galeria.html">galeria</a>
                 <a href="registro.html">Contactanos</a>
             </nav>
         </div>
@@ -57,492 +57,227 @@
     </div>
     <!--.barra-->
 
+
     <section class="seccion contenedor">
         <!-- <h2>La mejor conferencia de diseño web en español</h2>
-    <p>
-        Praesent rutrum efficitur pharetra. Vivamus scelerisque pretium velit, id tempor turpis pulvinar et. Ut
-        bibendum finibus massa non molestie. Curabitur urna metus, placerat gravida lacus ut, lacinia congue orci.
-        Maecenas luctus mi at ex blandit vehicula.
-        Morbi porttitor tempus euismod.
-    </p> -->
+        <p>
+            Praesent rutrum efficitur pharetra. Vivamus scelerisque pretium velit, id tempor turpis pulvinar et. Ut
+            bibendum finibus massa non molestie. Curabitur urna metus, placerat gravida lacus ut, lacinia congue orci.
+            Maecenas luctus mi at ex blandit vehicula.
+            Morbi porttitor tempus euismod.
+        </p> -->
     </section>
     <!--seccion-->
 
-    <section class="precios seccion">
-        <h2>servicios</h2>
-        <div class="contenedor">
-            <ul class="lista-precios clearfix">
-                <li>
-                    <div class="tabla-precio">
-                        <h3>Régimen de Incorpoación Fiscal</h3>
-                        <!-- <p class="numero">$647</p>
-                    <p class="min">por mes</p> -->
-                        <ul>
-                            <li>Asesoría Contable y Fiscal</li>
-                            <li>Cálculo de impuestos</li>
-                            <li>Presentación de declaración del RIF</li>
-                            <li>Acceso a sistema contable</li>
-                            <li>Facturación electrónica incluida</li>
-                        </ul>
-                        <a href="#" class="button">Contratar</a>
-                    </div>
-                </li>
-                <li>
-                    <div class="tabla-precio">
-                        <h3>Actividad Empresarial</h3>
-                        <!-- <p class="numero">$877</p>
-                    <p class="min">por mes</p> -->
-                        <ul>
-                            <li>Asesoría Contable y Fiscal</li>
-                            <li>Cálculo de impuestos</li>
-                            <li>Presentación de declaración mensual de ISR e IVA</li>
-                            <li>Acceso a sistema contable</li>
-                            <li>Facturación electrónica incluida</li>
-                        </ul>
-                        <a href="#" class="button ">Contratar</a>
-                    </div>
-                </li>
+    <main class="precios seccion">
+        <!-- <h2>servicios</h2> -->
+        <section class="precios seccion">
+            <h2>servicios</h2>
+            <div class="contenedor">
+                <ul class="lista-precios clearfix">
+                    <li>
+                        <div class="tabla-precio">
+                            <img src="img/construccion/07.jpg" alt="">
+                            <button class="accordion">
 
-                <li>
-                    <div class="tabla-precio">
-                        <h3>Actividad Empresarial Persona Moral</h3>
-                        <!-- <p class="numero">$2647</p>
-                    <p class="min">por mes</p> -->
-                        <ul>
-                            <li>Asesoría Contable y Fiscal</li>
-                            <li>Cálculo de impuestos</li>
-                            <li>Presentación de declaración mensual de ISR, IVA y DIOT</li>
-                            <li>Envío de Contabilidad Electrónica</li>
-                            <!-- <li>Acceso a sistema contable</li> -->
-                            <li>Facturación electrónica incluida</li>
-                        </ul>
-                        <a href="#" class="button">Contratar</a>
-                    </div>
-                </li>
-            </ul>
-        </div>
-    </section>
+                                <h3>Construccion e Ingenieria civil <i class="fas fa-chevron-down"></i></h3>
+                            </button>
 
-    <section class="precios seccion">
-        <h2>servicios Adicionales</h2>
-        <div class="contenedor">
-            <ul class="lista-precios clearfix">
-                <li>
-                    <div class="tabla-precio">
-                        <h3>Actualizaciones fiscales</h3>
-                        <!-- <p class="numero">$647</p>
-                    <p class="min">por mes</p> -->
-                        <ul>
-                            <li>Cálculo de impuesto</li>
-                            <li>Presentacón de declaraciones atrasadas.</li>
-                            <li>Actualización de opinión de cumplimiento</li>
-                        </ul>
-                        <a href="#" class="button">Contratar</a>
-                    </div>
-                </li>
-                <li>
-                    <div class="tabla-precio">
-                        <h3>Nómina</h3>
-                        <!-- <p class="numero">$877</p>
-                    <p class="min">por mes</p> -->
-                        <ul>
-                            <li>Cálculo del monto total sobre nómina</li>
-                            <li>Cálculo y presentación del ISN</li>
-                            <li>Altas, Bajas y modificaciones ante el IMSS</li>
-                            <li>Emisión del SUA</li>
-                        </ul>
-                        <a href="#" class="button ">Contratar</a>
-                    </div>
-                </li>
+                            <div class="panel">
 
-                <li>
-                    <div class="tabla-precio">
-                        <h3>Análisis Fiscal</h3>
-                        <!-- <p class="numero">$2647</p>
-                    <p class="min">por mes</p> -->
-                        <ul>
-                            <li>¿Qué obligaciones tienes registradas en el SAT?</li>
-                            <li>¿Qué obligaciones tienes pendientes con el SAT?</li>
-                            <li>Presentación de declaración mensual de ISR, IVA y DIOT</li>
-                            <li>Datos relevantes de tu facturación en base a los últimos 6 meses.</li>
-                            <!-- <li>Acceso a sistema contable</li> -->
-                            <li>Consejos para mejorar tu situación.</li>
-                        </ul>
-                        <a href="#" class="button">Contratar</a>
-                    </div>
-                </li>
-            </ul>
-        </div>
-    </section>
+                                <!-- <p class="numero">$647</p>
+                        <p class="min">por mes</p> -->
+                                <ul>
+                                    <li>Edificación y Urbanización</li>
+                                    <li>Terracerías</li>
+                                    <li>Avalúos</li>
+                                    <li>Lotificación de predios</li>
+                                    <li>Diseño de fraccionamientos</li>
+                                </ul>
+                                <!-- <a href="#" class="button">Contratar</a> -->
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="tabla-precio">
+                            <!-- <h3>Diseño de proyectos</h3> -->
+                            <img src="img/eje01jpg.jpg" alt="">
+                            <!-- <p class="numero">$877</p>
+                        <p class="min">por mes</p> -->
+                            <button class="accordion">
+                                <h3>Diseños de proyectos <i class="fas fa-chevron-down"></i></h3>
+                            </button>
+                            <div class="panel">
+                                <ul>
+                                    <li>planimetria</li>
+                                    <li>Proyectos ejecutivos</li>
+                                    <li>Levantamientos arquitectonicos</li>
+                                    <li>Estudios del entorno</li>
+                                    <li>Proyección 3D</li>
+                                    <li>supervicion</li>
+                                </ul>
+                            </div>
+                            <!-- <a href="#" class="button ">Contratar</a> -->
+                        </div>
+                    </li>
+                    <li>
+                        <div class="tabla-precio">
+                            <img src="img/construccion/17.jpg" alt="">
 
+                            <button class="accordion">
+                                <h3>construccion de casas <i class="fas fa-chevron-down"></i></h3>
+                            </button>
+                            <div class="panel">
+                                <ul>
+                                    <li>planimetria</li>
+                                    <li>Proyectos ejecutivos</li>
+                                    <li>Levantamientos arquitectonicos</li>
+                                    <li>Estudios del entorno</li>
+                                    <li>Proyección 3D</li>
+                                    <li>supervicion</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
 
+                    <li>
+                        <div class="tabla-precio">
+                            <img src="img/construccion/09.jpg" alt="">
+                            <!-- <p class="numero">$2647</p>
+                        <p class="min">por mes</p> -->
+                            <button class="accordion">
+                                <h3>construccion industrial <i class="fas fa-chevron-down"></i></h3>
+                            </button>
+                            <div class="panel">
+                                <ul>
+                                    <li>Suministro y fabricación</li>
+                                    <li>
+                                        Diseño y construcción de proyectos industriales y de infraestructura <br>
+                                        industrial
+                                        - metal - mecanica
+                                    </li>
+                                    <li>
+                                        servicios de mantenimientos
+                                        <br> industriales a <br>
+                                        plataformas, estructuras, ductos <br> y
+                                        tuberias
+                                    </li>
+                                </ul>
+                                <!-- <a href="#" class="button">Contratar</a> -->
+                            </div>
+                    </li>
+                    <li>
+                        <div class="tabla-precio">
+                            <img src="img/mantenimientos-contrumex/05.jpg" alt="">
 
-    <!-- 
-    <section class="seccion contenedor">
-        <h2>Calendario de Eventos</h2>
+                            <button class="accordion">
+                                <h3>obra blanca acabados y recubrimientos <i class="fas fa-chevron-down"></i></h3>
+                            </button>
+                            <div class="panel">
+                                <!-- <p class="numero">$2647</p>
+                                <p class="min">por mes</p> -->
+                                <ul>
+                                    <li>Tabla roca</li>
+                                    <li>Tabla cemento</li>
+                                    <li>Falsos Plafones</li>
+                                    <li>Diseño de diviciones y decorados</li>
+                                    <li>Pinturas, pastas y texturizados</li>
+                                    <!-- <li></li> -->
+                                </ul>
+                                <!-- <a href="#" class="button">Contratar</a> -->
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        
+                     <div class="tabla-precio">
+                        <img src="img/mantenimientos-contrumex/07.jpg" alt="">
+                        <button class="accordion">
+                            <h3>Impermeabilización<i class="fas fa-chevron-down"></i></h3>
+                        </button>
+                        <div class="panel">
+                            <ul>
+                                <li>acrilicas</li>
+                                <li>asfalticas</li>
+                                <li>entornados</li>
+                            </ul>
+                        </div>
+                     </div>
+                    </li>
+                    <li>
+                        <div class="tabla-precio">
+                            <img src="img/mantenimientos-contrumex/05.jpg" alt="">
 
-        <div class="calendario">
-
-
-
-            <h3>
-                <i class="fa fa-calendar" aria-hidden="true"></i>
-                2016-12-09
-            </h3>
-
-            <div class="dia">
-                <p class="titulo">HTML5 y CSS3</p>
-                <p class="hora"><i class="fa fa-clock-o" aria-hidden="true"></i> 2016-12-09 02:00:00 hrs
-                <p>
-
-                    <i class="fa fa-code" aria-hidden="true"></i> Taller
-                </p>
-                <p><i class="fa fa-user" aria-hidden="true"></i> Juan Sanchez </p>
-
+                            <button class="accordion">
+                                <h3>Mantenimientos e instalaciones <br>
+                                    industrial - comercial - recidencial <i class="fas fa-chevron-down"></i></h3>
+                            </button>
+                            <div class="panel">
+                                <!-- <p class="numero">$2647</p>
+                                <p class="min">por mes</p> -->
+                                <ul>
+                                    <li>Tabla roca</li>
+                                    <li>Tabla cemento</li>
+                                    <li>Falsos Plafones</li>
+                                    <li>Diseño de diviciones y decorados</li>
+                                    <li>Pinturas, pastas y texturizados</li>
+                                    <!-- <li></li> -->
+                                </ul>
+                                <!-- <a href="#" class="button">Contratar</a> -->
+                            </div>
+                        </div>
+                        
+                    </li>
+                    <li>
+                        <div class="tabla-precio">
+                            <img src="img/estructuras/02.jpg" alt="">
+                            <button class="accordion">
+                                <h3>Renta de equipo y mantenimiento <br>
+                                    para la construccion<i class="fas fa-chevron-down"></i></h3>
+                            </button>
+                            <div class="panel">
+                                <ul>
+                                    <li>Andamios</li>
+                                    <li>Cimbra</li>
+                                    <li>Compresores</li>
+                                    <li>podadoras</li>
+                                    <li>herramienta menor</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
             </div>
+        </section>
 
-
-
-            <div class="dia">
-                <p class="titulo">WordPress</p>
-                <p class="hora"><i class="fa fa-clock-o" aria-hidden="true"></i> 2016-12-09 19:00:00 hrs
-                <p>
-
-                    <i class="fa fa-code" aria-hidden="true"></i> Taller
-                </p>
-                <p><i class="fa fa-user" aria-hidden="true"></i> Harold Garcia </p>
-
-            </div>
-
-
-
-            <div class="dia">
-                <p class="titulo">Como ser freelancer</p>
-                <p class="hora"><i class="fa fa-clock-o" aria-hidden="true"></i> 2016-12-09 10:00:00 hrs
-                <p>
-
-                    <i class="fa fa-comment" aria-hidden="true"></i> Conferencias
-                </p>
-                <p><i class="fa fa-user" aria-hidden="true"></i> Susan Sanchez </p>
-
-            </div>
-
-
-
-            <div class="dia">
-                <p class="titulo">TecnologÃ­as del Futuro PHP</p>
-                <p class="hora"><i class="fa fa-clock-o" aria-hidden="true"></i> 2016-12-09 05:00:00 hrs
-                <p>
-
-                    <i class="fa fa-comment" aria-hidden="true"></i> Conferencias
-                </p>
-                <p><i class="fa fa-user" aria-hidden="true"></i> Juan Sanchez </p>
-
-            </div>
-
-
-
-            <div class="dia">
-                <p class="titulo">Seguridad en la Web</p>
-                <p class="hora"><i class="fa fa-clock-o" aria-hidden="true"></i> 2016-12-09 07:00:00 hrs
-                <p>
-
-                    <i class="fa fa-comment" aria-hidden="true"></i> Conferencias
-                </p>
-                <p><i class="fa fa-user" aria-hidden="true"></i> Shari Herrera </p>
-
-            </div>
-
-
-
-            <div class="dia">
-                <p class="titulo">DiseÃ±o UI y UX para mÃ³viles</p>
-                <p class="hora"><i class="fa fa-clock-o" aria-hidden="true"></i> 2016-12-09 10:00:00 hrs
-                <p>
-
-                    <i class="fa fa-university" aria-hidden="true"></i> Seminarios
-                </p>
-                <p><i class="fa fa-user" aria-hidden="true"></i> Susan Sanchez </p>
-
-            </div>
-
-
-            <h3>
-                <i class="fa fa-calendar" aria-hidden="true"></i>
-                2016-12-10
-            </h3>
-
-            <div class="dia">
-                <p class="titulo">Angular 5</p>
-                <p class="hora"><i class="fa fa-clock-o" aria-hidden="true"></i> 2016-12-10 19:00:00 hrs
-                <p>
-
-                    <i class="fa fa-university" aria-hidden="true"></i> Seminarios
-                </p>
-                <p><i class="fa fa-user" aria-hidden="true"></i> Juan Sanchez </p>
-
-            </div>
-
-
-
-            <div class="dia">
-                <p class="titulo">PHP y MySQL</p>
-                <p class="hora"><i class="fa fa-clock-o" aria-hidden="true"></i> 2016-12-10 12:00:00 hrs
-                <p>
-
-                    <i class="fa fa-code" aria-hidden="true"></i> Taller
-                </p>
-                <p><i class="fa fa-user" aria-hidden="true"></i> Shari Herrera </p>
-
-            </div>
-
-
-
-            <div class="dia">
-                <p class="titulo">JavaScript Avanzado</p>
-                <p class="hora"><i class="fa fa-clock-o" aria-hidden="true"></i> 2016-12-10 14:00:00 hrs
-                <p>
-
-                    <i class="fa fa-code" aria-hidden="true"></i> Taller
-                </p>
-                <p><i class="fa fa-user" aria-hidden="true"></i> Juan Sanchez </p>
-
-            </div>
-
-
-
-            <div class="dia">
-                <p class="titulo">SEO en Google</p>
-                <p class="hora"><i class="fa fa-clock-o" aria-hidden="true"></i> 2016-12-10 17:00:00 hrs
-                <p>
-
-                    <i class="fa fa-code" aria-hidden="true"></i> Taller
-                </p>
-                <p><i class="fa fa-user" aria-hidden="true"></i> Susana Rivera </p>
-
-            </div>
-
-
-
-            <div class="dia">
-                <p class="titulo">De Photoshop a HTML5 y CSS3</p>
-                <p class="hora"><i class="fa fa-clock-o" aria-hidden="true"></i> 2016-12-10 19:00:00 hrs
-                <p>
-
-                    <i class="fa fa-code" aria-hidden="true"></i> Taller
-                </p>
-                <p><i class="fa fa-user" aria-hidden="true"></i> Harold Garcia </p>
-
-            </div>
-
-
-
-            <div class="dia">
-                <p class="titulo">PHP Intermedio y Avanzado</p>
-                <p class="hora"><i class="fa fa-clock-o" aria-hidden="true"></i> 2016-12-10 21:00:00 hrs
-                <p>
-
-                    <i class="fa fa-code" aria-hidden="true"></i> Taller
-                </p>
-                <p><i class="fa fa-user" aria-hidden="true"></i> Susan Sanchez </p>
-
-            </div>
-
-
-
-            <div class="dia">
-                <p class="titulo">Como crear una tienda online que venda millones en pocos dÃ­a</p>
-                <p class="hora"><i class="fa fa-clock-o" aria-hidden="true"></i> 2016-12-10 10:00:00 hrs
-                <p>
-
-                    <i class="fa fa-comment" aria-hidden="true"></i> Conferencias
-                </p>
-                <p><i class="fa fa-user" aria-hidden="true"></i> Susan Sanchez </p>
-
-            </div>
-
-
-
-            <div class="dia">
-                <p class="titulo">Los mejores lugares para encontrar trabajo</p>
-                <p class="hora"><i class="fa fa-clock-o" aria-hidden="true"></i> 2016-12-10 17:00:00 hrs
-                <p>
-
-                    <i class="fa fa-comment" aria-hidden="true"></i> Conferencias
-                </p>
-                <p><i class="fa fa-user" aria-hidden="true"></i> Rafael Bautista </p>
-
-            </div>
-
-
-
-            <div class="dia">
-                <p class="titulo">Pasos para crear un negocio rentable </p>
-                <p class="hora"><i class="fa fa-clock-o" aria-hidden="true"></i> 2016-12-10 19:00:00 hrs
-                <p>
-
-                    <i class="fa fa-comment" aria-hidden="true"></i> Conferencias
-                </p>
-                <p><i class="fa fa-user" aria-hidden="true"></i> Shari Herrera </p>
-
-            </div>
-
-
-
-            <div class="dia">
-                <p class="titulo">DiseÃ±o UI y UX para mÃ³viles</p>
-                <p class="hora"><i class="fa fa-clock-o" aria-hidden="true"></i> 2016-12-10 17:00:00 hrs
-                <p>
-
-                    <i class="fa fa-university" aria-hidden="true"></i> Seminarios
-                </p>
-                <p><i class="fa fa-user" aria-hidden="true"></i> Harold Garcia </p>
-
-            </div>
-
-
-            <h3>
-                <i class="fa fa-calendar" aria-hidden="true"></i>
-                2016-12-11
-            </h3>
-
-            <div class="dia">
-                <p class="titulo">Laravel</p>
-                <p class="hora"><i class="fa fa-clock-o" aria-hidden="true"></i> 2016-12-11 10:00:00 hrs
-                <p>
-
-                    <i class="fa fa-code" aria-hidden="true"></i> Taller
-                </p>
-                <p><i class="fa fa-user" aria-hidden="true"></i> Rafael Bautista </p>
-
-            </div>
-
-
-
-            <div class="dia">
-                <p class="titulo">Crea tu propia API</p>
-                <p class="hora"><i class="fa fa-clock-o" aria-hidden="true"></i> 2016-12-11 12:00:00 hrs
-                <p>
-
-                    <i class="fa fa-code" aria-hidden="true"></i> Taller
-                </p>
-                <p><i class="fa fa-user" aria-hidden="true"></i> Shari Herrera </p>
-
-            </div>
-
-
-
-            <div class="dia">
-                <p class="titulo">JavaScript y jQuery</p>
-                <p class="hora"><i class="fa fa-clock-o" aria-hidden="true"></i> 2016-12-11 14:00:00 hrs
-                <p>
-
-                    <i class="fa fa-code" aria-hidden="true"></i> Taller
-                </p>
-                <p><i class="fa fa-user" aria-hidden="true"></i> Juan Sanchez </p>
-
-            </div>
-
-
-
-            <div class="dia">
-                <p class="titulo">Creando Plantillas para WordPress</p>
-                <p class="hora"><i class="fa fa-clock-o" aria-hidden="true"></i> 2016-12-11 17:00:00 hrs
-                <p>
-
-                    <i class="fa fa-code" aria-hidden="true"></i> Taller
-                </p>
-                <p><i class="fa fa-user" aria-hidden="true"></i> Susana Rivera </p>
-
-            </div>
-
-
-
-            <div class="dia">
-                <p class="titulo">Tiendas Virtuales en Magento</p>
-                <p class="hora"><i class="fa fa-clock-o" aria-hidden="true"></i> 2016-12-11 19:00:00 hrs
-                <p>
-
-                    <i class="fa fa-code" aria-hidden="true"></i> Taller
-                </p>
-                <p><i class="fa fa-user" aria-hidden="true"></i> Harold Garcia </p>
-
-            </div>
-
-
-
-            <div class="dia">
-                <p class="titulo">Creando una App en Android en una maÃ±ana</p>
-                <p class="hora"><i class="fa fa-clock-o" aria-hidden="true"></i> 2016-12-11 10:00:00 hrs
-                <p>
-
-                    <i class="fa fa-university" aria-hidden="true"></i> Seminarios
-                </p>
-                <p><i class="fa fa-user" aria-hidden="true"></i> Susana Rivera </p>
-
-            </div>
-
-
-
-            <div class="dia">
-                <p class="titulo">Creando una App en iOS en una tarde</p>
-                <p class="hora"><i class="fa fa-clock-o" aria-hidden="true"></i> 2016-12-11 17:00:00 hrs
-                <p>
-
-                    <i class="fa fa-university" aria-hidden="true"></i> Seminarios
-                </p>
-                <p><i class="fa fa-user" aria-hidden="true"></i> Rafael Bautista </p>
-
-            </div>
-
-
-
-            <div class="dia">
-                <p class="titulo">Flexbox para principiantes</p>
-                <p class="hora"><i class="fa fa-clock-o" aria-hidden="true"></i> 2016-12-10 11:00:00 hrs
-                <p>
-
-                    <i class="fa fa-comment" aria-hidden="true"></i> Conferencias
-                </p>
-                <p><i class="fa fa-user" aria-hidden="true"></i> Susana Rivera </p>
-
-            </div>
-
-        </div>
-        <!--.calendario-->
-
-
-
-    <!-- </section> -->
+    </main>
+    <!--seccion-->
 
     <footer class="site-footer">
         <div class="contenedor clearfix">
             <div class="footer-informacion">
-                <h3>Sobre <span>CONTABILIZATE</span></h3>
-                <p>
-                    Despacho contable fiscal y administrativo, especializados en negocios internacionales.
+                <h3>Sobre <span>Constructora Rio Mar</span></h3>
+                <p style="text-align: justify;">
+                    Somos una empresa que se desarrolla en el sector de la construcción, manejando proyectos con
+                    principios de calidad, tiempo, alcances y costos. Adaptamos las especificaciones técnicas y los
+                    planes a los diversos requerimientos de nuestros clientes.
                 </p>
-                <p>
-                    Internacionalizamos tu negocio para hacerlo crecer en poco tiempo.
-                </p>
-                <p>
-                    Desde pymes y freelancers y todo pequeño negocio apoyarlo desde su registro, hasta su administración
-                    a otros niveles, internacionalizando su empresa.
-                </p>
-                <p>
-                    Llevando una contabilidad ordenada y planificada dando a conocer todas tus obligaciones fiscales,
-                    apoyándole para que todas esas obligaciones trabajen a su favor.
+                <p style="text-align: justify;">
+                    Nuestro equipo trabaja en un ambiente adecuado, con motivaciones y posibilidades de desarrollo y
+                    concientizados en respetar las condiciones del medio ambiente en el que nos desenvolvemos,
+                    trabajando en conjunto con todos y todas las personas que brindan de sus servicios y ayudar en
+                    la manera que nos sea posible en todos nuestros lugares de trabajo.
                 </p>
             </div>
             <div class="ultimos-tweets">
                 <h3>Últimas <span>Publicaciones</span></h3>
-                <div class="fb-page" data-href="https://www.facebook.com/contabilidadelyn/" data-tabs="timeline"
+                <!-- <div class="fb-page" data-href="https://www.facebook.com/contabilidadelyn/" data-tabs="timeline"
                     data-width="" data-height="" data-small-header="false" data-adapt-container-width="true"
                     data-hide-cover="false" data-show-facepile="true">
                     <blockquote cite="https://www.facebook.com/contabilidadelyn/" class="fb-xfbml-parse-ignore"><a
                             href="https://www.facebook.com/contabilidadelyn/">A&amp;C servicios contables.</a>
                     </blockquote>
-                </div>
+                </div> -->
             </div>
             <div class="menu">
                 <h3>Redes <span>sociales</span></h3>
@@ -552,72 +287,15 @@
                     <a target="_blanck"
                         href="https://api.whatsapp.com/send?phone=7531683407&amp;text=Hola!&nbsp;me&nbsp;pueden&nbsp;apoyar?"><i
                             class="fab fa-whatsapp" aria-hidden="true"></i></a>
-                    <!-- <a target="_blank" href="https://www.instagram.com/friopolarhl/"><i class="fab fa-instagram"
-                            aria-hidden="true"></i></a> -->
+                    <a target="_blank" href="https://www.instagram.com/friopolarhl/"><i class="fab fa-instagram"
+                            aria-hidden="true"></i></a>
                 </nav>
             </div>
         </div>
 
         <p class="copyright">
-            Todos los derechos Reservados CONTABILIZATE 2021.
+            Todos los derechos Reservados CONSTRURIOMAR 2021.
         </p>
-
-
-
-        <!-- Begin MailChimp Signup Form -->
-        <link href="//cdn-images.mailchimp.com/embedcode/classic-10_7.css" rel="stylesheet" type="text/css">
-        <style type="text/css">
-            #mc_embed_signup {
-                background: #fff;
-                clear: left;
-                font: 14px Helvetica, Arial, sans-serif;
-            }
-
-            /* Add your own MailChimp form style overrides in your site stylesheet or in this style block.
-We recommend moving this block and the preceding CSS link to the HEAD of your HTML file. */
-        </style>
-        <div style="display:none;">
-            <div id="mc_embed_signup">
-                <form
-                    action="//easy-webdev.us11.list-manage.com/subscribe/post?u=b3bb37039b6fbf3db0c1a8331&amp;id=20463b69f2"
-                    method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate"
-                    target="_blank" novalidate>
-                    <div id="mc_embed_signup_scroll">
-                        <h2>Suscribete al Newsletter y no te pierdas nada de este evento</h2>
-                        <div class="indicates-required"><span class="asterisk">*</span> es obligatorio</div>
-                        <div class="mc-field-group">
-                            <label for="mce-EMAIL">Correo Electrónico <span class="asterisk">*</span>
-                            </label>
-                            <input type="email" value="" name="EMAIL" class="required email" id="mce-EMAIL">
-                        </div>
-                        <div id="mce-responses" class="clear">
-                            <div class="response" id="mce-error-response" style="display:none"></div>
-                            <div class="response" id="mce-success-response" style="display:none"></div>
-                        </div>
-                        <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
-                        <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text"
-                                name="b_b3bb37039b6fbf3db0c1a8331_20463b69f2" tabindex="-1" value=""></div>
-                        <div class="clear"><input type="submit" value="Suscribirse" name="subscribe"
-                                id="mc-embedded-subscribe" class="button"></div>
-                    </div>
-                </form>
-            </div>
-            <script type='text/javascript' src='//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js'></script>
-            <script type='text/javascript'>
-                (function ($) {
-                    window.fnames = new Array();
-                    window.ftypes = new Array();
-                    fnames[0] = 'EMAIL';
-                    ftypes[0] = 'email';
-                    fnames[1] = 'FNAME';
-                    ftypes[1] = 'text';
-                    fnames[2] = 'LNAME';
-                    ftypes[2] = 'text';
-                }(jQuery));
-                var $mcj = jQuery.noConflict(true);
-            </script>
-            <!--End mc_embed_signup-->
-        </div>
     </footer>
 
     <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
@@ -626,41 +304,17 @@ We recommend moving this block and the preceding CSS link to the HEAD of your HT
         src="https://cdnjs.cloudflare.com/ajax/libs/jquery-animateNumber/0.0.14/jquery.animateNumber.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.countdown/2.2.0/jquery.countdown.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/lettering.js/0.7.0/jquery.lettering.min.js"></script>
-
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.colorbox/1.6.4/jquery.colorbox-min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
     <script src="js/main.js"></script>
+    <script src="js/carousel.js"></script>
     <script src="js/cotizador.js"></script>
+    <script src="js/acordion.js"></script>
+
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCeSzprwFmUOSsAIf36sT9hONLvf3ReD_4&callback=initMap"
         async defer></script>
 
-    <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
-    <script>
-        (function (b, o, i, l, e, r) {
-            b.GoogleAnalyticsObject = l;
-            b[l] || (b[l] =
-                function () {
-                    (b[l].q = b[l].q || []).push(arguments)
-                });
-            b[l].l = +new Date;
-            e = o.createElement(i);
-            r = o.getElementsByTagName(i)[0];
-            e.src = 'https://www.google-analytics.com/analytics.js';
-            r.parentNode.insertBefore(e, r)
-        }(window, document, 'script', 'ga'));
-        ga('create', 'UA-XXXXX-X', 'auto');
-        ga('send', 'pageview');
-    </script>
-
-    <script type="text/javascript" src="//s3.amazonaws.com/downloads.mailchimp.com/js/signup-forms/popup/embed.js"
-        data-dojo-config="usePlainJson: true, isDebug: false"></script>
-    <script type="text/javascript">
-        require(["mojo/signup-forms/Loader"], function (L) {
-            L.start({
-                "baseUrl": "mc.us11.list-manage.com",
-                "uuid": "b3bb37039b6fbf3db0c1a8331",
-                "lid": "20463b69f2"
-            })
-        })
-    </script>
     <div id="fb-root"></div>
-    <script async defer crossorigin="anonymous" src="https://connect.facebook.net/es_ES/sdk.js#xfbml=1&version=v9.0"
-        nonce="00hZwuIQ"></script>
+    <script async defer crossorigin="anonymous"
+        src="https://connect.facebook.net/es_ES/sdk.js#xfbml=1&version=v9.0&appId=502654373424425&autoLogAppEvents=1"
+        nonce="I0coc6CJ"></script>
