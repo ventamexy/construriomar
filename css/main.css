@@ -393,7 +393,7 @@ h1.nombre-sitio {
 
 div.barra {
   background-color: #054970;
-  padding: 21px 0;
+  padding: 0px 0;
   
 }
 
@@ -411,7 +411,7 @@ div.logo {
 }
 
 div.logo img {
-  width: 80%;
+  width: 55%;
 }
 
 @media only screen and (min-width:768px) {
@@ -437,7 +437,7 @@ nav.navegacion-principal a {
   width: 100%;
   display: block;
   text-align: center;
-  margin-bottom: 20px;
+  margin-bottom: 60px;
   clear: both;
 }
 
@@ -462,7 +462,7 @@ nav.navegacion-principal a:hover {
     display: block;
   }
   nav.navegacion-principal a {
-    padding: 10px 10px;
+    padding: 25px 10px;
     display: inline-block;
     width: auto;
     display: inline-block;
