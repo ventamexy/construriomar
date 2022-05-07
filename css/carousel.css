@@ -15,7 +15,26 @@
   width: 100%;
 }
 
+.carousel-caption > * {
+  background: #05497066;
+}
+
 .subInformacion * {
   font-size: 25px;
   font-weight: bold;
+}
+
+.subInformacion div:nth-child(4) {
+  border-bottom: 3px solid red;
+  padding-bottom: 20px;
+}
+
+/* Media querys */
+@media (max-width:1240px) {
+
+  #carouselServicios {
+    min-height: 800px;
+    background-color: rgb(0,0,0, 0.4);
+  }
+
 }
