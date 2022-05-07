@@ -1,15 +1,15 @@
 var api = "AIzaSyCeSzprwFmUOSsAIf36sT9hONLvf3ReD_4";
 
-if (document.getElementById('mapa')) {
+// if (document.getElementById('mapa')) {
 
-    var map = L.map('mapa').setView([17.960890, -102.195890], 17);
+//     var map = L.map('mapa').setView([17.960890, -102.195890], 17);
 
-    L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png').addTo(map);
+//     L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png').addTo(map);
 
-    L.marker([17.960890, -102.195890]).addTo(map).bindPopup('ConstruRioMar').openPopup();
-    // .bindTooltip('GDLWebCamp 2018, Boletos ya disponibles')
-    // .openTooltip();
-}
+//     L.marker([17.960890, -102.195890]).addTo(map).bindPopup('ConstruRioMar').openPopup();
+//     // .bindTooltip('GDLWebCamp 2018, Boletos ya disponibles')
+//     // .openTooltip();
+// }
 
 
 $(function () {

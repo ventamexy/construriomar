@@ -56,6 +56,7 @@ function saveContactInfo(name, email, telefono, message) {
 // Send Email Info
 
 function sendEmail(name, email,telefono, message) {
+
     Email.send({
         Host: "smtp.gmail.com",
         Username: "venta.mexy@gmail.com",
@@ -64,8 +65,8 @@ function sendEmail(name, email,telefono, message) {
         From: "venta.mexy@gmail.com",
         Subject: `${name} sent you a message from Contabilizate`,
         Body: `Name: ${name} <br/> Email: ${email} <br/> Tel: ${telefono} <br/> Message: ${message}`,
-    })
-        .then((message) => alert("mail send successfully"));
+    }).then((message) => alert("mail send successfully"));
+    
 }
 
 
