@@ -34,6 +34,14 @@
   font-size: 48px;
 }
 
+.separador-derecho {
+  border-right: 3px solid red;
+}
+
+.border-bottom-none {
+  border-bottom: unset!important;
+}
+
 /* Media querys */
 @media (max-width:1240px) {
 
