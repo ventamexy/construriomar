@@ -1,66 +1,35 @@
-<!doctype html>
-<html class="no-js" lang="">
-
+<!DOCTYPE html>
+<html lang="en">
 <head>
-
-    <!-- Open Graph data -->
-    <meta property="og:locale" content="en_US" />
-    <meta property="og:type" content="article" />
-    <meta property="og:title" content="ConstructoraRioMarLZC" />
-    <meta property="og:description" content="" />
-    <meta property="og:url" content="https://www.constructorariomar.com" />
-    <meta property="og:site_name" content="ConstructoraRioMar" />
-    <meta property="article:tag"
-        content="EDIFICACIÓN Y URBANIZACIÓN, TERRACERÍAS, AVALÚOS, LOTIFICACIÓN DE PREDIOS, PLANIMETRIA, PROYECTOS EJECUTIVOS, LEVANTAMIENTOS ARQUITECTONICOS, ESTUDIOS DEL ENTORNO, PROYECCIÓN 3D, SUPERVICION, PLANIMETRIA, PROYECTOS EJECUTIVOS, LEVANTAMIENTOS ARQUITECTONICOS, ESTUDIOS DEL ENTORNO, PROYECCIÓN 3D, SUPERVICION, SUMINISTRO Y FABRICACIÓN,  DISEÑO Y CONSTRUCCIÓN DE PROYECTOS INDUSTRIALES Y DE INFRAESTRUCTURA
-  INDUSTRIAL - METAL - MECANICA, SERVICIOS DE MANTENIMIENTOS INDUSTRIALES A PLATAFORMAS, ESTRUCTURAS, DUCTOS Y TUBERIAS, TABLA ROCA, TABLA CEMENTO, FALSOS PLAFONES, DISEÑO DE DIVICIONES Y DECORADOS, PINTURAS, PASTAS Y TEXTURIZADOS, ANDAMIOS, CIMBRA, COMPRESORES, PODADORAS, HERRAMIENTA MENOR" />
-    <meta property="article:section" content="ConstructoraRioMarLZC" />
-
-
-    <meta charset="utf-8">
-    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ConstruRioMar</title>
     <link rel="icon" type="image/png" href="img/title.png">
-    <meta name="description" content="">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-
     <link rel="apple-touch-icon" href="apple-touch-icon.png">
     <!-- Place favicon.ico in the root directory -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/3.0.3/normalize.min.css" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/3.0.3/normalize.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
-        integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+    integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
     <link href="https://fonts.googleapis.com/css?family=Open+Sans|Oswald|PT+Sans" rel="stylesheet">
-
     <link rel="stylesheet" href="css/colorbox.css">
-
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/carousel.css">
-
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"/>
+    <link rel="stylesheet" href="css/librerias/bootstrap/dist/css/bootstrap.min.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
-    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
     <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
-
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-V9RQCLGYFL"></script>
     <script>
         window.dataLayer = window.dataLayer || [];
         function gtag() { dataLayer.push(arguments); }
         gtag('js', new Date());
-
         gtag('config', 'G-V9RQCLGYFL');
     </script>
 </head>
-
-<body class="index">
-    <!--[if lt IE 8]>
-            <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
-        <![endif]-->
-
-
-
-
+<body>
     <div class="barra fixed" id="navbar">
         <div class="contenedor clearfix">
             <div class="logo">
@@ -68,13 +37,11 @@
                     <img src="img/CONSTRURIOMAR.png" alt="logo constructora rio mar">
                 </a>
             </div>
-
             <div class="menu-movil">
                 <span></span>
                 <span></span>
                 <span></span>
             </div>
-
             <nav class="navegacion-principal clearfix">
                 <a href="nosotros.html">Nosotros</a>
                 <a href="servicios.html">servicios</a>
@@ -86,64 +53,109 @@
         <!--.contenedor-->
     </div>
     <!--.barra-->
-
-    <section class="seccion" style="background-color: black;">
-
-    </section>
-    <section class="">
-        <div class="carousel">
-            <div class="carousel__item carousel__item--visible">
-                <img src="img/01.jpg" />
+    <section class="seccion" style="background-color: black;"></section>
+    <!-- Slider -->
+    <div 
+    id="carouselServicios" 
+    class="carousel slide" 
+    data-bs-ride="carousel"
+    data-bs-interval="false">
+        <div class="carousel-indicators">
+            <button 
+            type="button" 
+            data-bs-target="#carouselServicios" 
+            data-bs-slide-to="0" 
+            class="active"
+            aria-current="true" 
+            aria-label="Slide 1"></button>
+            <button 
+            type="button" 
+            data-bs-target="#carouselServicios" 
+            data-bs-slide-to="1" 
+            aria-label="Slide 2"></button>
+            <button 
+            type="button"
+            data-bs-target="#carouselServicios" 
+            data-bs-slide-to="2"
+            aria-label="Slide 3"></button>
+            <button 
+            type="button"
+            data-bs-target="#carouselServicios" 
+            data-bs-slide-to="3"
+            aria-label="Slide 4"></button>
+        </div>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="img/slider/img1.jpg" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-flex">
+                    <h1>CONSTRUCCIÓN CIVIL</h1>
+                    <div class="subInformacion">
+                        <div>Apoyo a grandes proyectos</div>
+                        <div>Simentaciones profundas</div>
+                        <div>Estructuras de concreto</div>
+                        <div>Edificaciones</div>
+                    </div>
+                </div>
             </div>
-            <div class="carousel__item">
-                <img src="img/02.jpg" />
+            <div class="carousel-item">
+                <img src="img/slider/img2.jpg" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-flex">
+                    <h5>Second slide label</h5>
+                    <p>Some representative placeholder content for the second slide.</p>
+                </div>
             </div>
-            <div class="carousel__item">
-                <img src="img/03.jpg" />
+            <div class="carousel-item">
+                <img src="img/slider/img3.jpg" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-flex">
+                    <h5>Third slide label</h5>
+                    <p>Some representative placeholder content for the third slide.</p>
+                </div>
             </div>
-            <div class="carousel__item">
-                <img src="img/04.jpg" />
-            </div>
-
-            <div class="carousel__actions">
-                <button id="carousel__button--prev" aria-label="Previous slide">
-                     </button>
-
-                        <button id="carousel__button--next" aria-label="Next slide">
-                            >
-                        </button>
+            <div class="carousel-item">
+                <img src="img/slider/img4.jpg" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-flex">
+                    <h5>Third slide label</h5>
+                    <p>Some representative placeholder content for the third slide.</p>
+                </div>
             </div>
         </div>
-    </section>
+        <button 
+        class="carousel-control-prev" 
+        type="button" 
+        data-bs-target="#carouselServicios" 
+        data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button 
+        class="carousel-control-next" 
+        type="button" 
+        data-bs-target="#carouselServicios"
+        data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
     <!--seccion-->
     <section class="seccion">
         <div class="contenedor">
             <!-- <h2 class="centrar-texto">Sobre Nosotros</h2> -->
             <h2>construccion, ingenieria, servicio y <span style="color: #a10909;">mantenimientos.</span></h2>
             <div class="grid content-bg-two">
-
                 <div class="columnas-6">
                     <img src="img/construccion/06.jpg" style="width: 100%;" alt="Imagen Nosotros">
                 </div>
-
                 <div class="columnas-6">
-
                     <p>
                         Nuestra empresa siendo una profesional de la <span>construcción</span> en las
                         áreas de ingeniería civil dedicándonos a satisfacer las necesidades <span>comerciales,
-                            industriales, de vivienda</span> y mantenimientos.
+                        industriales, de vivienda</span> y mantenimientos.
                     </p>
                 </div>
-
-
-
                 <div class="columnas-6">
-                    <!-- <h2>construccion, ingenieria, servicio y mantenimientos.</h2> -->
-
-                    <p>Contamos con la <span>experiencia</span>, los conocimientos y las herramientas para realizar
-                        <span>trabajos de
-                            primer nivel</span>. La <span>Construcción Industrial</span> requiere de muchos elementos
-                        que en conjunto le dan la
+                    <p>
+                        Contamos con la <span>experiencia</span>, los conocimientos y las herramientas para realizar
+                        <span>trabajos de primer nivel</span>. La <span>Construcción Industrial</span> requiere de muchos elementos que en conjunto le dan la
                         <span>calidad</span> a cada proyecto, lo cual nos caracteriza en gran parte del país.
                     </p>
                 </div>
@@ -153,97 +165,51 @@
             </div>
         </div>
     </section>
-
-
-    <!-- 
-    <section>
-        <div class="newsletter parallax">
-            <div class="contenido contenedor">
-                <h3>Constructora rio mar</h3>
-            </div>
-            .contenido-->
-
-    <!-- </div>
-
-    </section> -->
-
     <div class="contador parallax">
         <div class="contenedor">
-
             <ul class="resumen-evento clearfix">
                 <li>
                     <p class="numero">0</p>
                     AÑOS DE EXPERIENCIA <br>
                     <i class="far fa-calendar-check" style="color: white; margin-bottom: 0.7em;"></i><br>
-
                 </li>
-                <!-- <li>
-                    <p class="numero">0</p>
-                    PROYECTOS <br>
-                    <i class="fas fa-tasks" style="color: white; margin-bottom: 0.7em;"></i><br>
-                </li>
-                <li>
-                    <p class="numero">0</p>
-                    MIEMBROS <br>
-                    <i class="fas fa-users" style="color: white; margin-bottom: 0.7em;"></i><br>
-
-                </li>
-                <li>
-                    <p class="numero">0</p>
-                    CLIENTES SATISFECHOS <br>
-                    <i class="fas fa-user" style="color: white; margin-bottom: 0.7em;"></i><br>
-
-                </li> -->
-
             </ul>
         </div>
     </div>
-
     <section class="seccion">
-
         <div class="contenedor">
             <h2>Industria de la construccion</h2>
             <div class="grid">
                 <div class="servicio  columnas-2">
-
                     <div class="iconos">
                         <i class="fas fa-city"></i>
-
                     </div>
-                    <p>Construcción y <br>
-                        Urbanización</p>
+                    <p>Construcción y <br>Urbanización</p>
                 </div>
                 <div class="servicio  columnas-2">
                     <div class="iconos">
                         <i class="fas fa-industry"></i>
-
                     </div>
-                    <p>construccion <br>
-                        industrial</p>
+                    <p>construccion <br>industrial</p>
                 </div>
                 <div class="servicio  columnas-2">
                     <!-- <h3>Social Media </h3> -->
                     <div class="iconos">
                         <i class="fas fa-construction"></i>
-
                     </div>
-                    <p>construccion <br>
-                        civil</p>
+                    <p>construccion <br>civil</p>
                 </div>
                 <div class="servicio  columnas-2">
                     <!-- <h3>Social Media </h3> -->
                     <div class="iconos">
                         <i class="fas fa-hard-hat"></i>
-
                     </div>
-                    <p>Industria <br>
-                        metalmecanica</p>
+                    <p>Industria <br> metalmecanica</p>
                 </div>
                 <div class="servicio  columnas-2">
                     <!-- <h3>Social Media </h3> -->
                     <div class="iconos">
                         <i class="fas fa-cogs"></i>
-
                     </div>
                     <p>infraestructura</p>
                 </div>
@@ -251,39 +217,22 @@
                     <!-- <h3>Social Media </h3> -->
                     <div class="iconos">
                         <i class="fas fa-tools"></i>
-
                     </div>
                     <p>mantenimientos</p>
                 </div>
             </div>
         </div>
     </section>
-
-
-
-
-
-
     <div id="mapa" class="mapa"></div>
-
-
     <section class="contenedor seccion">
         <h2 class="fw-300 centrar-texto">Contáctanos</h2>
-        <!-- <div id="mapa" class="mapa"></div> -->
         <p>Dirección: Nicolás Bravo 341, Centro, Cd. L. Cárdenas, Mich., MX.</p>
         <p>Teléfonos:  +52 (753) 537 1349, +52 (753) 181 1195 y +52 (753) 168 3407</p>
         <p>Correo: 
             <a href="mailto:info@construriomar.com">info@construriomar.com</a><br>
             <a href="mailto:construccionlc@yahoo.com">construccionlc@yahoo.com</a>
         </p>
-
-        <!-- <nav class="redes-sociales">
-                        <a target="_blank" href="https://www.facebook.com/AlbercasLC/"><i class="fab fa-facebook" aria-hidden="true"></i></a>
-                        <a target="_blank" href="https://api.whatsapp.com/send?phone=7531683407&amp;text=Hola!&nbsp;me&nbsp;pueden&nbsp;apoyar?"><i class="fab fa-whatsapp" aria-hidden="true"></i></a>
-                        <a target="_blank" href="https://www.instagram.com/friopolarhl/"><i class="fab fa-instagram" aria-hidden="true"></i></a>
-                    </nav> -->
     </section>
-
     <footer class="site-footer">
         <div class="contenedor clearfix">
             <div class="footer-informacion">
@@ -307,7 +256,6 @@
             </div>
             <div class="ultimos-tweets">
                 <h3>Últimas <span>Publicaciones</span></h3>
-
                 <div class="fb-page" data-href="https://www.facebook.com/Construriomar-330689211603453"
                     data-tabs="timeline" data-width="" data-height="" data-small-header="false"
                     data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true">
@@ -315,27 +263,17 @@
                         <a href="https://www.facebook.com/ConstructoraRioMarLZC/">Construriomar</a>
                     </blockquote>
                 </div>
-
-                <!-- <div class="fb-page" data-href="https://www.facebook.com/contabilidadelyn/" data-tabs="timeline"
-                        data-width="" data-height="" data-small-header="false" data-adapt-container-width="true"
-                        data-hide-cover="false" data-show-facepile="true">
-                        <blockquote cite="https://www.facebook.com/contabilidadelyn/" class="fb-xfbml-parse-ignore"><a
-                                href="https://www.facebook.com/contabilidadelyn/">A&amp;C servicios contables.</a>
-                        </blockquote>
-                    </div> -->
-
-                
             </div>
             <div class="menu">
                 <h3>Redes <span>sociales</span></h3>
                 <nav class="redes-sociales">
                     <a target="_blanck" href="https://www.facebook.com/ConstructoraRioMarLZC/"><i
-                            class="fab fa-facebook" aria-hidden="true"></i></a>
+                    class="fab fa-facebook" aria-hidden="true"></i></a>
                     <a target="_blanck"
-                        href="https://api.whatsapp.com/send?phone=7531683407&amp;text=Hola!&nbsp;me&nbsp;pueden&nbsp;apoyar?"><i
-                            class="fab fa-whatsapp" aria-hidden="true"></i></a>
+                    href="https://api.whatsapp.com/send?phone=7531683407&amp;text=Hola!&nbsp;me&nbsp;pueden&nbsp;apoyar?"><i
+                    class="fab fa-whatsapp" aria-hidden="true"></i></a>
                     <a target="_blank" href="https://www.instagram.com/construriomar/"><i class="fab fa-instagram"
-                            aria-hidden="true"></i></a>
+                    aria-hidden="true"></i></a>
                 </nav>
                 <h4>Visitanos en nuestros sitios web</h4>
                 <ul>
@@ -344,9 +282,7 @@
                         font-size: 18px;
                         color: #fff;">
                       <i class="fas fa-globe"></i>
-                      <a href="https://icamar.com/" 
-                        style="color: #fff;
-                            text-decoration:none;">
+                      <a href="https://icamar.com/" style="color: #fff; text-decoration:none;">
                         www.icamar.com
                       </a>
                     </p>
@@ -411,16 +347,11 @@
                 </ul>
             </div>
         </div>
-
-        <p class="copyright">
-            Todos los derechos Reservados CONSTRURIOMAR 2021.
-        </p>
+        <p class="copyright">Todos los derechos Reservados CONSTRURIOMAR 2021.</p>
     </footer>
-
-    <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
+    <script src="js/librerias/jquery/dist/jquery.min.js"></script>
     <script src="js/plugins.js"></script>
-    <script
-        src="https://cdnjs.cloudflare.com/ajax/libs/jquery-animateNumber/0.0.14/jquery.animateNumber.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-animateNumber/0.0.14/jquery.animateNumber.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.countdown/2.2.0/jquery.countdown.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/lettering.js/0.7.0/jquery.lettering.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.colorbox/1.6.4/jquery.colorbox-min.js"></script>
@@ -428,13 +359,12 @@
     <script src="js/main.js"></script>
     <script src="js/carousel.js"></script>
     <script src="js/cotizador.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW"
-        crossorigin="anonymous"></script>
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCeSzprwFmUOSsAIf36sT9hONLvf3ReD_4&callback=initMap"
-        async defer></script>
-
+    async defer></script>
     <div id="fb-root"></div>
     <script async defer crossorigin="anonymous"
-        src="https://connect.facebook.net/es_ES/sdk.js#xfbml=1&version=v9.0&appId=502654373424425&autoLogAppEvents=1"
-        nonce="I0coc6CJ"></script>
+    src="https://connect.facebook.net/es_ES/sdk.js#xfbml=1&version=v9.0&appId=502654373424425&autoLogAppEvents=1"
+    nonce="I0coc6CJ"></script>
+    <script src="css/librerias/bootstrap/dist/js/bootstrap.min.js"></script>
+</body>
+</html>
