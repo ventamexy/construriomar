@@ -45,8 +45,8 @@ a:hover {
     text-align: right!important;
 }
 
-.text-center {
-    text-align: center!important;
+.links li a {
+    color: #fff!important;
 }
 
 /* Estilos personalizados {END} */
@@ -54,12 +54,19 @@ a:hover {
 
 /* Estilos específicos */
 
-.contendorTelefonosFooter li a {
-    color: #fff!important;
-}
-
 .contenidoFooter div {
     background: #054970;
     color: #fff;
     padding: 20px;
+}
+
+.paginasWeb li {
+    color: #df6464!important;
+    font-weight: bold;
+    padding: 10px;
+}
+
+.paginasWeb li a {
+    margin: 0px 20px;
+    font-weight: normal;
 }
