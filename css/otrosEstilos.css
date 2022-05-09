@@ -105,6 +105,10 @@ h2::after {
     font-weight: bold;
 }
 
+.proveedorCV li a {
+    border-bottom: 0px!important;
+}
+
 @media (max-width:350px) {
     
     .fb-page span {
