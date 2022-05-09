@@ -82,6 +82,10 @@ a:hover {
 
 @media (max-width:350px) {
     
+    .fb-page span {
+        overflow: hidden;
+    }
+
     .fb-page iframe {
         width: 80%!important;
     }
