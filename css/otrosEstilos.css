@@ -37,6 +37,10 @@ a:hover {
     border-bottom: 3px solid #fb0000;
 }
 
+.b-c-white {
+    border-color: #fff!important;
+}
+
 .text-left {
     text-align: left!important;
 }
@@ -47,6 +51,10 @@ a:hover {
 
 .links li a {
     color: #fff!important;
+}
+
+h2::after {
+    height: 0px!important;
 }
 
 /* Estilos personalizados {END} */
@@ -78,6 +86,19 @@ a:hover {
 
 .fb-page iframe {
     width: 100%!important;
+}
+
+.tituloVacantes, .tituloCV {
+    font-weight: bold;
+    font-size: 23px;
+    text-align: center;
+    background-color: var(--color-principal)!important;
+    border-color: var(--color-principal)!important;
+}
+
+.contenedorVacantes li {
+    color: #000;
+    font-weight: bold;
 }
 
 @media (max-width:350px) {
