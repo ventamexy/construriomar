@@ -9,15 +9,18 @@
     <link rel="apple-touch-icon" href="apple-touch-icon.png">
     <!-- Place favicon.ico in the root directory -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/3.0.3/normalize.min.css"/>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
-    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
-    integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/font-awesome-4.7.0/css/font-awesome.min.css"/>
     <link href="https://fonts.googleapis.com/css?family=Open+Sans|Oswald|PT+Sans" rel="stylesheet">
+    <link rel="stylesheet" href="css/root.css">
     <link rel="stylesheet" href="css/colorbox.css">
     <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/otrosEstilos.css">
     <link rel="stylesheet" href="css/carousel.css">
     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"/>
     <link rel="stylesheet" href="css/librerias/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/otrosEstilos.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
     <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
     <!-- Global site tag (gtag.js) - Google Analytics -->
@@ -88,7 +91,7 @@
             <div class="carousel-item active">
                 <img src="img/slider/img1.jpg" class="d-block w-100" alt="...">
                 <div class="carousel-caption d-flex">
-                    <h1 class="p-3 mb-0">CONSTRUCCIÓN CIVIL</h1>
+                    <h1 class="p-3 mb-0 tituloPrincipal">CONSTRUCCIÓN CIVIL</h1>
                     <div class="subInformacion p-5">
                         <div class="h2">Apoyo a grandes proyectos</div>
                         <div class="h3">Simentaciones profundas</div>
@@ -169,7 +172,7 @@
     <section class="seccion">
         <div class="contenedor">
             <!-- <h2 class="centrar-texto">Sobre Nosotros</h2> -->
-            <h1 class="text-uppercase text-center">construcción, ingeniería y servicios</h1>
+            <h1 class="text-uppercase text-center titulo-principal">Construcción, ingeniería y servicios</h1>
             <h2 class="text-uppercase text-center subTitulo">Residencial | Comercial e Industrial</h2>
             <div class="grid content-bg-two">
                 <div class="columnas-6">
@@ -178,8 +181,8 @@
                 <div class="columnas-6">
                     <p>
                         Nuestra empresa siendo una profesional de la <span>construcción</span> en las
-                        áreas de ingeniería civil dedicándonos a satisfacer las necesidades <span>comerciales,
-                        industriales, de vivienda</span> y mantenimientos.
+                        áreas de ingeniería civil dedicándonos a satisfacer las necesidades <span>Residencial,
+                        Comercial e Industrial</span>.
                     </p>
                 </div>
                 <div class="columnas-6">
@@ -212,13 +215,13 @@
             <div class="grid">
                 <div class="servicio  columnas-2">
                     <div class="iconos">
-                        <i class="fas fa-city"></i>
+                        <i class="fa fa-building  "></i>
                     </div>
                     <p>Construcción y <br>Urbanización</p>
                 </div>
                 <div class="servicio  columnas-2">
                     <div class="iconos">
-                        <i class="fas fa-industry"></i>
+                        <i class="fa fa-industry"></i>
                     </div>
                     <p>Construcción <br>Industrial</p>
                 </div>
@@ -263,15 +266,39 @@
         loading="lazy" 
         referrerpolicy="no-referrer-when-downgrade"></iframe>
     </div>
+    <hr class="mt-5 hr-p">
     <section class="contenedor seccion">
         <h2 class="fw-300 centrar-texto">Contáctanos</h2>
-        <p>Dirección: Nicolás Bravo 341, Centro, Cd. L. Cárdenas, Mich., MX.</p>
-        <p>Teléfonos:  +52 (753) 537 1349, +52 (753) 181 1195 y +52 (753) 168 3407</p>
-        <p>
-            Correo: 
-            <a href="mailto:info@construriomar.com">info@construriomar.com</a><br>
-            <a href="mailto:construccionlc@yahoo.com">construccionlc@yahoo.com</a>
-        </p>
+        <p class="fw-bold color-t-principal">Dirección:</p>
+        <p>Nicolás Bravo 341, Centro, Cd. L. Cárdenas, Mich., MX.</p>
+        <p class="fw-bold color-t-principal">Teléfonos:</p>
+        <ul class="text-center p-0">
+            <li>
+                <a href="tel:+52 (753) 537 1349">
+                    &nbsp;<i class="fa fa-phone"></i>&nbsp;&nbsp;+52 (753) 537 1349
+                </a>
+            </li>
+            <li>
+                <a href="tel:+52 (753) 181 1195">
+                    &nbsp;<i class="fa fa-phone"></i>&nbsp;&nbsp;+52 (753) 181 1195
+                </a>
+            </li>
+            <li>
+                <a href="https://wa.me/7531683407"
+                target="_blank">
+                    &nbsp;<i class="fa fa-whatsapp"></i>&nbsp;+52 (753) 168 3407
+                </a>
+            </li>
+        </ul>
+        <p class="fw-bold color-t-principal">Correo:</p>
+        <ul class="text-center p-0">
+            <li>
+                <a href="mailto:info@construriomar.com">info@construriomar.com</a>
+            </li>
+            <li>
+                <a href="mailto:construccionlc@yahoo.com">construccionlc@yahoo.com</a>
+            </li>
+        </ul>
     </section>
     <footer class="site-footer">
         <div class="contenedor clearfix">

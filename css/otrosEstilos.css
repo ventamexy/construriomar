@@ -1,0 +1,33 @@
+/* Estilos personalizados */
+.hr-p {
+    padding: 5px;
+    background: var(--color-principal);
+}
+
+.color-t-principal {
+    color: var(--color-principal)!important;
+}
+
+.color-f-principal {
+    background-color: var(--color-principal)!important;
+}
+
+a {
+    text-decoration: none;
+    color: var(--color-principal);
+    font-weight: 500;
+}
+
+a:hover {
+    color: var(--color-principal);
+    border-bottom: 1px solid var(--color-secundario);
+}
+
+.titulo-principal {
+    color: var(--color-principal);
+    font-weight: bold;
+}
+
+.rotate-100deg {
+    transform: rotate(100deg);
+}
