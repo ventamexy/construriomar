@@ -1,4 +1,5 @@
-/* Estilos personalizados */
+/* Estilos personalizados {START} */
+
 .hr-p {
     padding: 5px;
     background: var(--color-principal);
@@ -30,4 +31,35 @@ a:hover {
 
 .rotate-100deg {
     transform: rotate(100deg);
+}
+
+.b-b-red {
+    border-bottom: 3px solid #fb0000;
+}
+
+.text-left {
+    text-align: left!important;
+}
+
+.text-right {
+    text-align: right!important;
+}
+
+.text-center {
+    text-align: center!important;
+}
+
+/* Estilos personalizados {END} */
+
+
+/* Estilos específicos */
+
+.contendorTelefonosFooter li a {
+    color: #fff!important;
+}
+
+.contenidoFooter div {
+    background: #054970;
+    color: #fff;
+    padding: 20px;
 }
