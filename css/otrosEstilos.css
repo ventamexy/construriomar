@@ -79,3 +79,11 @@ a:hover {
 .fb-page iframe {
     width: 100%!important;
 }
+
+@media (max-width:350px) {
+    
+    .fb-page iframe {
+        width: 80%!important;
+    }
+
+}
