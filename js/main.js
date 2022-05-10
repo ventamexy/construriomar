@@ -27,7 +27,7 @@ window.addEventListener("load", function() {
 
 // Movimiento scroll
 $(document).on("scroll", function() {
-    
+
     let scrollYPosicionActual = $(this)[0].scrollingElement.scrollTop;
     if ( scrollYPosicionActual >= 200 ) {
         $(".navbar")[0].classList.add("menu-fijado");
@@ -47,6 +47,9 @@ $(document).on("scroll", function() {
     // }
     
 });
+
+// --- Se establece el anio actual en el campo correspondiente.
+$(".anio-actual").text(new Date().getFullYear());
 
 $(document).on("click", ".irAbajo", function(){
     let scrollY = $("window").context.scrollingElement;

@@ -143,6 +143,10 @@ h2::after {
     margin-top: 100px;
 }
 
+.redes-sociales i {
+    color:#fff;
+}
+
 @media (max-width:350px) {
     
     .fb-page span {
