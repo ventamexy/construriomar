@@ -153,6 +153,10 @@ h2::after {
     font-size: 18px;
 }
 
+.b-b-3px-red {
+    border-bottom: 3px solid #a80909;
+}
+
 @media (max-width:350px) {
     
     .fb-page span {
