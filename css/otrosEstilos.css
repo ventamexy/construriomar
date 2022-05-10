@@ -147,6 +147,12 @@ h2::after {
     color:#fff;
 }
 
+.accordion-button {
+    font-weight: bold;
+    color: #054970!important;
+    font-size: 18px;
+}
+
 @media (max-width:350px) {
     
     .fb-page span {
