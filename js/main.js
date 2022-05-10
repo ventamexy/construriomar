@@ -27,24 +27,24 @@ window.addEventListener("load", function() {
 
 // Movimiento scroll
 $(document).on("scroll", function() {
-
+    
     let scrollYPosicionActual = $(this)[0].scrollingElement.scrollTop;
     if ( scrollYPosicionActual >= 200 ) {
-        $(".navbar")[1].classList.add("menu-fijado");
+        $(".navbar")[0].classList.add("menu-fijado");
     } else {
-        $(".navbar")[1].classList.remove("menu-fijado");
+        $(".navbar")[0].classList.remove("menu-fijado");
     }
 
-    var scrollY = $("window").context.scrollingElement;
-    var alturaScrollY = scrollY.offsetHeight - scrollY.clientHeight;
+    // var scrollY = $(window).scrollTop();
+    // var alturaScrollY = scrollY.offsetHeight - scrollY.clientHeight;
     
-    if ( alturaScrollY == scrollYPosicionActual ) {
-        $(".irAbajo i").addClass("transform-r-180");
-        $(".irAbajo").removeClass("irAbajo").addClass("irArriba");
-    } else {
-        $(".irAbajo i").removeClass("transform-r-180");
-        $(".irArriba").removeClass("irArriba").addClass("irAbajo");
-    }
+    // if ( alturaScrollY == scrollYPosicionActual ) {
+    //     $(".irAbajo i").addClass("transform-r-180");
+    //     $(".irAbajo").removeClass("irAbajo").addClass("irArriba");
+    // } else {
+    //     $(".irAbajo i").removeClass("transform-r-180");
+    //     $(".irArriba").removeClass("irArriba").addClass("irAbajo");
+    // }
     
 });
 

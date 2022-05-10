@@ -66,6 +66,30 @@ h2::after {
     min-height: 1000px;
 }
 
+/* Menú */
+.navbar {
+    z-index: 100;
+}
+
+.navbar-nav {
+    display: flex!important;
+    flex-direction: unset!important;
+}
+
+.navbar-nav>li.active, .item-activo {
+	border-bottom: 2px solid var(--color-secundario);
+}
+
+.navbar-nav li a {
+    color:#fff!important;
+}
+
+.menu-fijado {
+    position: fixed;
+    top: 0!important;
+    transition: 0.5s;
+}
+
 /* Estilos personalizados {END} */
 
 /* ////////////////////////////////////////////////////////////////////////////// */
@@ -117,21 +141,6 @@ h2::after {
 
 .m-t-100 {
     margin-top: 100px;
-}
-
-/* Menú */
-
-.navbar-nav {
-    display: flex!important;
-    flex-direction: unset!important;
-}
-
-.navbar-nav>li.active, .item-activo {
-	border-bottom: 2px solid var(--color-secundario);
-}
-
-.navbar-nav li a {
-    color:#fff!important;
 }
 
 @media (max-width:350px) {
