@@ -63,6 +63,7 @@ h2::after {
 
 /* Estilos personalizados {END} */
 
+/* ////////////////////////////////////////////////////////////////////////////// */
 
 /* Estilos específicos */
 
@@ -121,7 +122,7 @@ h2::after {
 }
 
 .navbar-nav>li.active, .item-activo {
-	border-bottom: 2px solid #ffc527;
+	border-bottom: 2px solid var(--color-secundario);
 }
 
 .navbar-nav li a {

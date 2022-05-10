@@ -2,9 +2,10 @@ window.addEventListener("load", function() {
 
     // Selección de opción del menú en base a la sección actual.
     let pagina = window.location.pathname;
+    let arrayAhref = $("#navegacion-principal li a");
+
     if ( pagina != "/" ) {
 
-        let arrayAhref = $("#navegacion-principal li a");
         arrayAhref.removeClass("item-activo");
         for (var i = 0; i < arrayAhref.length; i++) {
             let elemento = arrayAhref[i];
@@ -15,9 +16,10 @@ window.addEventListener("load", function() {
                 contenedorPadre.classList.add("background-color-none");
                 return;
             }
-            
         }
 
+    } else {
+        arrayAhref[0].classList.add("item-activo");
     }
 
 });
