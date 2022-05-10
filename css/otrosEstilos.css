@@ -61,6 +61,11 @@ h2::after {
     height: 0px!important;
 }
 
+.carousel-inner {
+    background: rgb(122, 122, 122);
+    min-height: 1000px;
+}
+
 /* Estilos personalizados {END} */
 
 /* ////////////////////////////////////////////////////////////////////////////// */
