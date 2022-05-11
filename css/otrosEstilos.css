@@ -96,6 +96,20 @@ h2::after {
 
 /* Estilos específicos */
 
+.irAbajo, .irArriba {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background-color: rgb(36 36 32);   
+    color: #fff;
+    position: fixed;
+    bottom: 31px;
+    right: 40px;
+    border: 0;
+    box-shadow: 0px 0px 10px 3px #6e6e6e;
+    z-index: 3;
+}
+
 .contenidoFooter div {
     background: #054970;
     color: #fff;

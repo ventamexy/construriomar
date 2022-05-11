@@ -45,6 +45,8 @@ $(document).on("scroll", function() {
     //     $(".irAbajo i").removeClass("transform-r-180");
     //     $(".irArriba").removeClass("irArriba").addClass("irAbajo");
     // }
+
+    let tamanioDocumentoY = window.pageYOffset;
     
 });
 
@@ -52,10 +54,8 @@ $(document).on("scroll", function() {
 $(".anio-actual").text(new Date().getFullYear());
 
 $(document).on("click", ".irAbajo", function(){
-    let scrollY = $("window").context.scrollingElement;
-    let alturaScrollY = scrollY.offsetHeight - scrollY.clientHeight;
     window.scroll({
-        top: alturaScrollY,
+        top: document.body.offsetHeight,
         behavior: 'smooth'
     });
 });

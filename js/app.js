@@ -68,5 +68,3 @@ function sendEmail(name, email,telefono, message) {
     }).then((message) => alert("mail send successfully"));
     
 }
-
-
