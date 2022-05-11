@@ -204,3 +204,11 @@ nav.navbar a {
     }
 
 }
+
+@media (max-width:991px) {
+    
+    #navegacion-principal {
+        display: block!important;
+    }
+
+}
