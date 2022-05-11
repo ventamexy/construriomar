@@ -47,7 +47,8 @@ $(document).on("scroll", function() {
     // }
 
     let tamanioDocumentoY = window.pageYOffset;
-    
+    console.log(tamanioDocumentoY);
+
 });
 
 // --- Se establece el anio actual en el campo correspondiente.
@@ -70,7 +71,7 @@ $(document).on("click", ".irArriba", function(){
 
 // /////////////////////////////////////////////////////////////////
 
-var api = "AIzaSyCeSzprwFmUOSsAIf36sT9hONLvf3ReD_4";
+// var api = "AIzaSyCeSzprwFmUOSsAIf36sT9hONLvf3ReD_4";
 
 // $(function () {
 
@@ -84,26 +85,19 @@ var api = "AIzaSyCeSzprwFmUOSsAIf36sT9hONLvf3ReD_4";
 // });
 
 
-// ---Acción menú principal
-$(document).on("click", ".menu-movil", function () { 
-    console.log(123);
-    $(".navegacion-principal").addClass("menu-activo"); 
-}); 
+// let ubicacionPrincipal = window.pageYOffset;
+// window.onscroll = function(){
 
-
-let ubicacionPrincipal = window.pageYOffset;
-window.onscroll = function(){
-
-    let Desplazamiento_actual = window.pageYOffset;
-    if(ubicacionPrincipal >= Desplazamiento_actual){
-        document.getElementById('navbar').style.top = '0';
-    } 
-    else {
-        document.getElementById('navbar').style.top = '-100px'
-    }
-    ubicacionPrincipal =Desplazamiento_actual;
+//     let Desplazamiento_actual = window.pageYOffset;
+//     if(ubicacionPrincipal >= Desplazamiento_actual){
+//         document.getElementById('navbar').style.top = '0';
+//     } 
+//     else {
+//         document.getElementById('navbar').style.top = '-100px'
+//     }
+//     ubicacionPrincipal =Desplazamiento_actual;
     
-}
+// }
 
 
 
