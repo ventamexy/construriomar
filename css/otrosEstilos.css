@@ -127,7 +127,12 @@ h2::after {
     font-weight: normal;
 }
 
+.fb-page {
+    padding: 0px!important;
+}
+
 .fb-page span {
+    width: auto!important;
     display: flex!important;
     justify-content: center;
 }
