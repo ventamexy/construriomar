@@ -219,6 +219,18 @@ nav.navbar a {
     border-color: var(--color-secundario)!important;
 }
 
+.contenedorFormularioContacto form label {
+    color: var(--color-principal);
+    font-weight: bold;
+}
+
+.campoObligatorio {
+    font-style: italic;
+    color: red;
+    font-weight: bold;
+    font-size: 13px;
+}
+
 @media (max-width:350px) {
     
     .fb-page span {
