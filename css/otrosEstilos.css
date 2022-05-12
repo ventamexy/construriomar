@@ -111,7 +111,7 @@ h2::after {
 }
 
 .contenidoFooter div {
-    background: #054970;
+    background: var(--color-principal);
     color: #fff;
     padding: 20px;
 }
@@ -168,7 +168,7 @@ h2::after {
 
 .accordion-button {
     font-weight: bold;
-    color: #054970!important;
+    color: var(--color-principal)!important;
     font-size: 18px;
 }
 
@@ -190,7 +190,7 @@ h2::after {
 
 nav.navbar {
     width: 100%;
-    background-color: #054970!important;
+    background-color: var(--color-principal)!important;
     padding: 0px 0;
 }
 
@@ -201,6 +201,22 @@ nav.navbar a {
 
 .logo img {
     width: 200px!important;
+}
+
+.contenedorFormularioContacto {
+    padding: 50px;
+    background: #efefef;
+}
+
+.contenedorFormularioContacto .container {
+    border: 3px solid #fff;
+    padding: 10px;
+}
+
+.btnEnviarMensaje, .btnEnviarMensaje:disabled{
+    color: #fff;
+    background-color: var(--color-principal)!important;
+    border-color: var(--color-secundario)!important;
 }
 
 @media (max-width:350px) {

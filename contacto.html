@@ -61,67 +61,69 @@
         </div>
     </nav>
     <section class="seccion" style="background-color: black;"></section>
-    <div class="container">
-        <!-- Contacto -->
-        <div class="row">
-            <h1 class="text-uppercase text-center titulo-principal b-b-3px-red">FORMULARIO DE COTIZACIÓN:</h1>
-            <form id="frmConsulta">
-                <div class="row">
-                    <div class="col-12 col-md-6 form-group">
-                        <label for="nombre">Nombre:</label>
-                        <input type="text" name="nombre" class="form-control">
-                        <span class="campoObligatorio">Campo obligatorio</span>
-                    </div>
+    <div class="container-fluid contenedorFormularioContacto">
+        <div class="container">
+            <!-- Contacto -->
+            <div class="row mt-5">
+                <h1 class="text-uppercase text-center titulo-principal b-b-3px-red">FORMULARIO DE COTIZACIÓN:</h1>
+                <form id="frmConsulta">
                     <div class="row">
                         <div class="col-12 col-md-6 form-group">
-                            <label for="nombre">Email:</label>
+                            <label for="nombre">Nombre:</label>
                             <input type="text" name="nombre" class="form-control">
+                            <span class="campoObligatorio">Campo obligatorio</span>
                         </div>
-                        <div class="col-12 col-md-6 form-group">
-                            <label for="nombre">Teléfono:</label>
-                            <input type="text" name="telefono" class="form-control">
+                        <div class="row">
+                            <div class="col-12 col-md-6 form-group">
+                                <label for="nombre">Email:</label>
+                                <input type="text" name="nombre" class="form-control">
+                            </div>
+                            <div class="col-12 col-md-6 form-group">
+                                <label for="nombre">Teléfono:</label>
+                                <input type="text" name="telefono" class="form-control">
+                            </div>
                         </div>
-                    </div>
-                    <div class="col-12">
-                        <label for="descripcionProyecto">Mi proyecto es de:</label>
-                        <textarea 
-                        name="mensaje" 
-                        rows="20" 
-                        placeholder="Describa aquí su proyecto"
-                        class="form-control"></textarea>
-                    </div>
-                    <div class="row">
-                        <div class="col-12 col-md-6 form-group">
-                            <label for="nombre">Lugar a realizar:</label>
-                            <input type="text" name="lugarRealizar" class="form-control">
-                        </div>
-                        <div class="col-12 col-md-6 form-group">
-                            <label for="descripcionProyecto">Medidas:</label>
+                        <div class="col-12">
+                            <label for="descripcionProyecto">Mi proyecto es de:</label>
                             <textarea 
-                            name="medidas" 
-                            rows="5" 
-                            class="form-control h-auto"
-                            placeholder="Si las conoce"></textarea>
+                            name="mensaje" 
+                            rows="20" 
+                            placeholder="Describa aquí su proyecto"
+                            class="form-control"></textarea>
+                        </div>
+                        <div class="row">
+                            <div class="col-12 col-md-6 form-group">
+                                <label for="nombre">Lugar a realizar:</label>
+                                <input type="text" name="lugarRealizar" class="form-control">
+                            </div>
+                            <div class="col-12 col-md-6 form-group">
+                                <label for="descripcionProyecto">Medidas:</label>
+                                <textarea 
+                                name="medidas" 
+                                rows="5" 
+                                class="form-control h-auto"
+                                placeholder="Si las conoce"></textarea>
+                            </div>
+                        </div>
+                        <div class="col-12">
+                            <label for="descripcionProyecto">Fotos:</label>
+                            <input 
+                            type="file"
+                            name="fotos" 
+                            class="form-control"
+                            id="fotos"
+                            multiple
+                            accept="image/png, image/jpeg">
                         </div>
                     </div>
-                    <div class="col-12">
-                        <label for="descripcionProyecto">Fotos:</label>
-                        <input 
-                        type="file"
-                        name="fotos" 
-                        class="form-control"
-                        id="fotos"
-                        multiple
-                        accept="image/png, image/jpeg">
-                    </div>
-                </div>
-                <button 
-                class="btn btn-primary btnEnviarMensaje m-auto"
-                type="button"
-                disabled>
-                    ENVIAR
-                </button>
-            </form>
+                    <button 
+                    class="btn btn-primary btnEnviarMensaje mt-4"
+                    type="button"
+                    disabled>
+                        ENVIAR
+                    </button>
+                </form>
+            </div>
         </div>
     </div>
     <seccion class="seccion d-none">
