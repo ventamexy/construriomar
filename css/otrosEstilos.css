@@ -205,7 +205,18 @@ nav.navbar a {
 
 .contenedorFormularioContacto {
     padding: 50px;
+    margin-top: 188px!important;
     background: #efefef;
+}
+
+.contenedorFormularioContacto img {
+    z-index: -5;
+    position: absolute;
+    top: 100px;
+    left: 0;
+    right: 0;
+    width: 80%!important;
+    margin: 0px auto;
 }
 
 .contenedorFormularioContacto .container {
