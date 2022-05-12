@@ -90,6 +90,10 @@ h2::after {
     transition: 0.5s;
 }
 
+.texto-blanco {
+    color: #fff!important;
+}
+
 /* Estilos personalizados {END} */
 
 /* ////////////////////////////////////////////////////////////////////////////// */
