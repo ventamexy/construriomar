@@ -47,7 +47,6 @@ $(document).on("scroll", function() {
     // }
 
     let tamanioDocumentoY = window.pageYOffset;
-    console.log(tamanioDocumentoY);
 
 });
 
