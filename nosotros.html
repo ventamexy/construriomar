@@ -33,6 +33,9 @@
     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"/>
     <link rel="stylesheet" href="css/librerias/bootstrap/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="css/otrosEstilos.css">
+    <link rel="stylesheet" href="assets/js/plugins/slick-1.8.1/slick/slick-theme.css">
+    <link rel="stylesheet" href="assets/js/plugins/slick-1.8.1/slick/slick.css">
+    <link rel="stylesheet" href="css/slickpersonalizados.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
     <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
     <!-- Global site tag (gtag.js) - Google Analytics -->
@@ -110,118 +113,120 @@
                     claro quiénes somos y lo que estamos haciendo.
                    </p>
                 </div>
-                <!-- Principales clientes -->
-                <div class="row mt-5">
-                    <h1 class="text-uppercase text-center titulo-principal b-b-3px-red">
-                        Principales Clientes:
-                    </h1>
-                    <div class="row">
-                        <div class="slider-empresas row">
-                            <div>
-                                <img src="img/logos_empresas/pemex.png" alt="PEMEX">
-                                <span class="footer-img-slider">PEMEX</span>
-                            </div>
-                            <div>
-                                <img src="img/logos_empresas/API.png" alt="API">
-                                <span class="footer-img-slider">API</span>
-                            </div>
-                            <div>
-                                <img src="img/logos_empresas/kansas.png" alt="KANSAS">
-                                <span class="footer-img-slider">KANSAS</span>
-                            </div>
-                            <div>
-                                <img src="img/logos_empresas/BMW.png" alt="BMW">
-                                <span class="footer-img-slider">BMW</span>
-                            </div>
-                            <div>
-                                <img src="img/logos_empresas/coppel.svg" alt="Coppel">
-                                <span class="footer-img-slider">Coppel</span>
-                            </div>
-                            <div>
-                                <img src="img/logos_empresas/corona.png" alt="Corona">
-                                <span class="footer-img-slider">Corona</span>
-                            </div>
-                            <div>
-                                <img src="img/logos_empresas/CFE.png" alt="CFE">
-                                <span class="footer-img-slider">CFE</span>
-                            </div>
-                            <div>
-                                <img src="img/logos_empresas/logo_jumex.svg" alt="Jumex">
-                                <span class="footer-img-slider">Jumex</span>
-                            </div>
-                            <div>
-                                <img src="img/logos_empresas/logo_michoacan.jpg" alt="Michoacán">
-                                <span class="footer-img-slider">Michoacán</span>
-                            </div>
-                            <div>
-                                <img src="img/logos_empresas/logo_guerrero_2.jpg" alt="Guerrero">
-                                <span class="footer-img-slider">Guerrero</span>
-                            </div>
-                            <div>
-                                <img src="img/logos_empresas/jalisco.svg" alt="Jalisco">
-                                <span class="footer-img-slider">Jalisco</span>
-                            </div>
-                            <div>
-                                <img src="img/logos_empresas/nayerit.png" alt="Nayarit">
-                                <span class="footer-img-slider">Nayarit</span>
-                            </div>
-                            <div>
-                                <img src="img/logos_empresas/coahuila.jpg" alt="Coahuila">
-                                <span class="footer-img-slider">Coahuila</span>
-                            </div>
-                            <div>
-                                <img src="img/logos_empresas/nuevo_leon.jpg" alt="Nuevo León">
-                                <span class="footer-img-slider">Nuevo León</span>
-                            </div>
-                            <div>
-                                <img src="img/logos_empresas/lazarocardenas_mich.jpg" alt="LÁZARO CÁRDENAS MICH.">
-                                <span class="footer-img-slider">LÁZARO CÁRDENAS MICH.</span>
-                            </div>
-                            <div>
-                                <img src="img/logos_empresas/zihua.png" alt="ZIHUATANEJO GRO.">
-                                <span class="footer-img-slider">ZIHUATANEJO GRO.</span>
-                            </div>
-                            <div>
-                                <img src="img/logos_empresas/logo-casageo.png" alt="CASAS GEO">
-                                <span class="footer-img-slider">CASAS GEO</span>
-                            </div>
-                            <div>
-                                <img src="img/logos_empresas/casaara.png" alt="CASAARA">
-                                <span class="footer-img-slider">CASAARA</span>
-                            </div>
-                            <div>
-                                <img src="img/logos_empresas/SEMAR.jpg" alt="SEMAR">
-                                <span class="footer-img-slider">SEMAR</span>
-                            </div>
-                            <div>
-                                <img src="img/logos_empresas/Sedena.png" alt="SEDENA">
-                                <span class="footer-img-slider">SEDENA</span>
-                            </div>
-                            <div>
-                                <img src="img/logos_empresas/stc.png" alt="SCT">
-                                <span class="footer-img-slider">SCT</span>
-                            </div>
-                            <div>
-                                <img src="img/logos_empresas/Chevrolet.png" alt="CHEVROLET">
-                                <span class="footer-img-slider">CHEVROLET</span>
-                            </div>
-                            <div>
-                                <img src="img/logos_empresas/fertinal.png" alt="FERTINAL">
-                                <span class="footer-img-slider">FERTINAL</span>
-                            </div>
-                            <div>
-                                <img src="img/logos_empresas/Mittal.jpg" alt="MITTAL">
-                                <span class="footer-img-slider">MITTAL</span>
-                            </div>
-                            <div>
-                                <img src="img/logos_empresas/Sams-Club.png" alt="Sam's CLUB">
-                                <span class="footer-img-slider">Sam's CLUB</span>
-                            </div>
-                        </div>
+            </div>
+        </section>
+    </div>
+    <!-- Principales clientes -->
+    <div class="container-fluid contenedorClientes">
+        <div class="container">
+            <div class="row mt-5">
+                <h1 class="text-uppercase text-center titulo-principal b-b-3px-red">
+                    Principales Clientes:
+                </h1>
+                <div class="slider-empresas">
+                    <div>
+                        <img src="img/logos_empresas/pemex.png" alt="PEMEX">
+                        <span class="footer-img-slider">PEMEX</span>
+                    </div>
+                    <div>
+                        <img src="img/logos_empresas/API.png" alt="API">
+                        <span class="footer-img-slider">API</span>
+                    </div>
+                    <div>
+                        <img src="img/logos_empresas/kansas.png" alt="KANSAS">
+                        <span class="footer-img-slider">KANSAS</span>
+                    </div>
+                    <div>
+                        <img src="img/logos_empresas/BMW.png" alt="BMW">
+                        <span class="footer-img-slider">BMW</span>
+                    </div>
+                    <div>
+                        <img src="img/logos_empresas/coppel.svg" alt="Coppel">
+                        <span class="footer-img-slider">Coppel</span>
+                    </div>
+                    <div>
+                        <img src="img/logos_empresas/corona.png" alt="Corona">
+                        <span class="footer-img-slider">Corona</span>
+                    </div>
+                    <div>
+                        <img src="img/logos_empresas/CFE.png" alt="CFE">
+                        <span class="footer-img-slider">CFE</span>
+                    </div>
+                    <div>
+                        <img src="img/logos_empresas/logo_jumex.svg" alt="Jumex">
+                        <span class="footer-img-slider">Jumex</span>
+                    </div>
+                    <div>
+                        <img src="img/logos_empresas/logo_michoacan.jpg" alt="Michoacán">
+                        <span class="footer-img-slider">Michoacán</span>
+                    </div>
+                    <div>
+                        <img src="img/logos_empresas/logo_guerrero_2.jpg" alt="Guerrero">
+                        <span class="footer-img-slider">Guerrero</span>
+                    </div>
+                    <div>
+                        <img src="img/logos_empresas/jalisco.svg" alt="Jalisco">
+                        <span class="footer-img-slider">Jalisco</span>
+                    </div>
+                    <div>
+                        <img src="img/logos_empresas/nayerit.png" alt="Nayarit">
+                        <span class="footer-img-slider">Nayarit</span>
+                    </div>
+                    <div>
+                        <img src="img/logos_empresas/coahuila.jpg" alt="Coahuila">
+                        <span class="footer-img-slider">Coahuila</span>
+                    </div>
+                    <div>
+                        <img src="img/logos_empresas/nuevo_leon.jpg" alt="Nuevo León">
+                        <span class="footer-img-slider">Nuevo León</span>
+                    </div>
+                    <div>
+                        <img src="img/logos_empresas/lazarocardenas_mich.jpg" alt="LÁZARO CÁRDENAS MICH.">
+                        <span class="footer-img-slider">LÁZARO CÁRDENAS MICH.</span>
+                    </div>
+                    <div>
+                        <img src="img/logos_empresas/zihua.png" alt="ZIHUATANEJO GRO.">
+                        <span class="footer-img-slider">ZIHUATANEJO GRO.</span>
+                    </div>
+                    <div>
+                        <img src="img/logos_empresas/logo-casageo.png" alt="CASAS GEO">
+                        <span class="footer-img-slider">CASAS GEO</span>
+                    </div>
+                    <div>
+                        <img src="img/logos_empresas/casaara.png" alt="CASAARA">
+                        <span class="footer-img-slider">CASAARA</span>
+                    </div>
+                    <div>
+                        <img src="img/logos_empresas/SEMAR.jpg" alt="SEMAR">
+                        <span class="footer-img-slider">SEMAR</span>
+                    </div>
+                    <div>
+                        <img src="img/logos_empresas/Sedena.png" alt="SEDENA">
+                        <span class="footer-img-slider">SEDENA</span>
+                    </div>
+                    <div>
+                        <img src="img/logos_empresas/stc.png" alt="SCT">
+                        <span class="footer-img-slider">SCT</span>
+                    </div>
+                    <div>
+                        <img src="img/logos_empresas/Chevrolet.png" alt="CHEVROLET">
+                        <span class="footer-img-slider">CHEVROLET</span>
+                    </div>
+                    <div>
+                        <img src="img/logos_empresas/fertinal.png" alt="FERTINAL">
+                        <span class="footer-img-slider">FERTINAL</span>
+                    </div>
+                    <div>
+                        <img src="img/logos_empresas/Mittal.jpg" alt="MITTAL">
+                        <span class="footer-img-slider">MITTAL</span>
+                    </div>
+                    <div>
+                        <img src="img/logos_empresas/Sams-Club.png" alt="Sam's CLUB">
+                        <span class="footer-img-slider">Sam's CLUB</span>
                     </div>
                 </div>
             </div>
-        </section>
+        </div>
     </div>
     <footer class="site-footer">
         <div class="container">
@@ -598,6 +603,8 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
     <script src="js/main.js"></script>
     <script src="js/carousel.js"></script>
+    <script src="assets/js/plugins/slick-1.8.1/slick/slick.min.js"></script>
+    <script src="assets/js/slickmain.js"></script>
     <script src="js/cotizador.js"></script>
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCeSzprwFmUOSsAIf36sT9hONLvf3ReD_4&callback=initMap"
     async defer></script>
