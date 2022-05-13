@@ -41,7 +41,7 @@ $(document).on("scroll", function() {
 
     // console.log(offsetHeight, clientHeight, (offsetHeight-clientHeight), " = ", scrollTop);
 
-    if ( (offsetHeight-clientHeight) == scrollTop ) {
+    if ( (offsetHeight-clientHeight) >= scrollTop ) {
         $(".irAbajo i").addClass("transform-r-180");
         $(".irAbajo").removeClass("irAbajo").addClass("irArriba");
     } else {
