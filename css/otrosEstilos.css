@@ -94,6 +94,10 @@ h2::after {
     color: #fff!important;
 }
 
+.transform-r-180 {
+    transform: rotate(180deg);
+}
+
 /* Estilos personalizados {END} */
 
 /* ////////////////////////////////////////////////////////////////////////////// */

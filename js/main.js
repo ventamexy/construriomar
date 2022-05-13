@@ -25,29 +25,42 @@ window.addEventListener("load", function() {
 });
 
 
-// Movimiento scroll
-$(document).on("scroll", function() {
+/**
+ * 
+ * Movimiento scrollY
+ * 
+ */
+$(document).on("scroll", function() { 
 
-    let scrollYPosicionActual = $(this)[0].scrollingElement.scrollTop;
-    if ( scrollYPosicionActual >= 200 ) {
+    /**
+     * --- Unidades en pixeles.
+     */
+    let offsetHeight = $(document)[0].scrollingElement.offsetHeight; // Altura total del elemento
+    let scrollTop = $(document).scrollTop(); // Desplazamiento del scroll vertical.
+    let clientHeight = $(document)[0].scrollingElement.clientHeight;
+
+    // console.log(offsetHeight, clientHeight, (offsetHeight-clientHeight), " = ", scrollTop);
+
+    if ( (offsetHeight-clientHeight) == scrollTop ) {
+        $(".irAbajo i").addClass("transform-r-180");
+        $(".irAbajo").removeClass("irAbajo").addClass("irArriba");
+    } else {
+        $(".irAbajo i").removeClass("transform-r-180");
+        $(".irArriba").removeClass("irArriba").addClass("irAbajo");
+    }
+
+    /**
+     * 
+     * Fijar menú
+     * 
+     */
+
+    if ( scrollTop >= 200 ) {
         $(".navbar")[0].classList.add("menu-fijado");
     } else {
         $(".navbar")[0].classList.remove("menu-fijado");
     }
-
-    // var scrollY = $(window).scrollTop();
-    // var alturaScrollY = scrollY.offsetHeight - scrollY.clientHeight;
     
-    // if ( alturaScrollY == scrollYPosicionActual ) {
-    //     $(".irAbajo i").addClass("transform-r-180");
-    //     $(".irAbajo").removeClass("irAbajo").addClass("irArriba");
-    // } else {
-    //     $(".irAbajo i").removeClass("transform-r-180");
-    //     $(".irArriba").removeClass("irArriba").addClass("irAbajo");
-    // }
-
-    let tamanioDocumentoY = window.pageYOffset;
-
 });
 
 // --- Se establece el anio actual en el campo correspondiente.
