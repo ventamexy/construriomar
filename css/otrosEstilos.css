@@ -459,7 +459,7 @@ footer h3 span {
 
 @media (max-width:991px) {
     
-    #navegacion-principal {
+    .navegacion-principal {
         display: block!important;
     }
 
