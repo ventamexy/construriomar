@@ -171,16 +171,6 @@ h2::after {
   display: block;
 }
 
-h3 {
-  font-size: 1.8em;
-  color: #00a2ff;
-  font-family: 'PT Sans', sans-serif;
-  margin: 0;
-  margin-bottom: 2em;
-}
-
-
-
 .button {
   background-color: #b8b530;
   padding: 10px 40px;
@@ -883,37 +873,6 @@ blockquote p::before {
   color: #b8b530;
 }
 
-footer.info-testimonial {
-  padding: 0;
-  background-color: transparent;
-}
-
-footer.info-testimonial img {
-  float: left;
-  width: 20%;
-  border-radius: 50%;
-  margin-left: 20px;
-}
-
-footer.info-testimonial cite {
-  text-align: left;
-  color: #054970;
-  text-transform: uppercase;
-  font-size: 12px;
-  padding-top: 20px;
-  width: 66.6%;
-  float: right;
-  font-weight: bold;
-  font-style: normal;
-}
-
-footer.info-testimonial cite span {
-  color: #000000;
-  display: block;
-  text-transform: none;
-  margin-top: 5px;
-}
-
 /*** Newsletter:   **/
 
 div.newsletter {
@@ -959,46 +918,6 @@ div.cuenta-regresiva ul li {
     width: 25%;
     float: left;
   }
-}
-
-/** Footer **/
-
-footer {
-  background-color: #4b4b4b;
-  padding-top: 40px;
-  margin-top: 20px;
-}
-
-footer .contenedor>div {
-  color: #ffffff;
-  padding: 0px 20px;
-  font-size: 12px;
-}
-
-@media only screen and (min-width:768px) {
-  footer .contenedor>div {
-    width: 33.3%;
-    float: left;
-  }
-}
-
-footer h3 {
-  color: #ffffff;
-  text-transform: uppercase;
-  font-family: 'Oswald', sans-serif;
-  margin-bottom: 20px;
-}
-
-footer h3 span {
-  color: #00a2ff;
-}
-
-footer .ultimos-tweets li {
-  margin-bottom: 10px;
-}
-
-footer nav.redes-sociales {
-  text-align: left;
 }
 
 p.copyright {
