@@ -140,7 +140,6 @@ h2::after {
 }
 
 .fb-page span {
-    width: auto!important;
     display: flex!important;
     justify-content: center;
 }
