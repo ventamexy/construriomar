@@ -249,7 +249,7 @@ nav.navbar a {
     font-size: 13px;
 }
 
-/* Estilos GENERAL {footer} */
+/* Estilos GENERAL {footer} 1 */
 
 footer {
     background: #252525;
@@ -404,6 +404,8 @@ footer h3 span {
 .contenedor-personal h3 {
     font-size: 1.8rem!important;
 }
+
+/* Estilos GENERAL {footer} 0 */
 
 @media (max-width:350px) {
     
