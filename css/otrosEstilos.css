@@ -191,6 +191,12 @@ h2::after {
     color: #fff!important;
 }
 
+.navegacion-principal li {
+    display: flex;
+    align-items: center;
+    color: #fff;
+}
+
 .navbar-toggler {
     background-color: #fff!important;
 }
