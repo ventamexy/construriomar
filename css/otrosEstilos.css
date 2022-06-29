@@ -9,7 +9,7 @@
     background-color: rgb(205 205 205 / 50%);
 }
 
-.contenedor-cimentaciones img, .contenedor-imagen {
+.contenedor-imagen, .contenedor-cimentaciones img, .seccion-principal-imagen img {
     min-height: 255px;
     max-height: 255px;
     object-fit: cover;
