@@ -1,3 +1,480 @@
+/* Estilos personalizados {START} */
+.text-justify {
+    text-align: justify;
+}
+
+.hr-p {
+    padding: 5px;
+    background: var(--color-principal);
+}
+
+.color-t-principal {
+    color: var(--color-principal)!important;
+}
+
+.color-f-principal {
+    background-color: var(--color-principal)!important;
+}
+
+a {
+    text-decoration: none!important;
+    color: var(--color-principal)!important;
+    font-weight: 500;
+}
+
+li {
+    list-style: none!important;
+}
+
+a:hover {
+    color: var(--color-principal)!important;
+    border-bottom: 1px solid var(--color-secundario)!important;
+}
+
+.titulo-principal {
+    color: var(--color-principal)!important;
+    font-weight: bold;
+}
+
+.rotate-100deg {
+    transform: rotate(100deg);
+}
+
+.b-b-red {
+    border-bottom: 3px solid #fb0000;
+}
+
+.b-c-white {
+    border-color: #fff!important;
+}
+
+.text-left {
+    text-align: left!important;
+}
+
+.text-right {
+    text-align: right!important;
+}
+
+.links li a {
+    color: #fff!important;
+}
+
+h2::after {
+    height: 0px!important;
+}
+
+.carousel-inner {
+    background: rgb(122, 122, 122);
+    min-height: 1000px;
+}
+
+/* Menú */
+.navbar {
+    z-index: 100;
+}
+
+.navbar-nav {
+    display: flex!important;
+    flex-direction: unset!important;
+}
+
+.navbar-nav>li.active, .item-activo {
+	border-bottom: 2px solid var(--color-secundario);
+}
+
+.navbar-nav li a {
+    color:#fff!important;
+}
+
 .b-b-3px-white {
     border-bottom: 3px solid #fff;
+}
+
+.menu-fijado {
+    position: fixed;
+    top: 0!important;
+    transition: 0.5s;
+}
+
+.texto-blanco {
+    color: #fff!important;
+}
+
+.transform-r-180 {
+    transform: rotate(180deg);
+}
+
+/* Estilos personalizados {END} */
+
+/* ////////////////////////////////////////////////////////////////////////////// */
+
+/* Estilos específicos */
+
+.irAbajo, .irArriba {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background-color: rgb(36 36 32);   
+    color: #fff;
+    position: fixed;
+    bottom: 31px;
+    right: 40px;
+    border: 0;
+    box-shadow: 0px 0px 10px 3px #6e6e6e;
+    z-index: 3;
+}
+
+.contenidoFooter div {
+    background: var(--color-principal);
+    color: #fff;
+    padding: 20px;
+}
+
+.paginasWeb li {
+    color: #df6464!important;
+    font-weight: bold;
+    padding: 10px;
+}
+
+.paginasWeb li a {
+    margin: 0px 20px;
+    font-weight: normal;
+}
+
+.fb-page {
+    padding: 0px!important;
+}
+
+.fb-page span {
+    display: flex!important;
+    justify-content: center;
+}
+
+.fb-page iframe {
+    width: 100%!important;
+}
+
+.tituloVacantes, .tituloCV {
+    font-weight: bold;
+    font-size: 23px;
+    text-align: center;
+    background-color: var(--color-principal)!important;
+    border-color: var(--color-principal)!important;
+}
+
+.contenedorVacantes li {
+    color: #000;
+    font-weight: bold;
+}
+
+.proveedorCV li a {
+    border-bottom: 0px!important;
+}
+
+.m-t-100 {
+    margin-top: 100px;
+}
+
+.redes-sociales i {
+    color:#fff;
+}
+
+.accordion-button {
+    font-weight: bold;
+    color: var(--color-principal)!important;
+    font-size: 18px;
+}
+
+.b-b-3px-red {
+    border-bottom: 3px solid #a80909;
+}
+
+.menu-activo {
+    display: block!important;
+}
+
+.navegacion-principal li a {
+    color: #fff!important;
+}
+
+.navegacion-principal li {
+    display: flex;
+    align-items: center;
+    color: #fff;
+}
+
+.navbar-toggler {
+    background-color: #fff!important;
+}
+
+nav.navbar {
+    width: 100%;
+    background-color: var(--color-principal)!important;
+    padding: 0px 0;
+}
+
+nav.navbar a {
+    color: #fff!important;
+    font-size: 20px;
+}
+
+.logo img {
+    width: 200px!important;
+}
+
+.contenedorFormularioContacto {
+    padding: 50px;
+    margin-top: 188px!important;
+    background: #efefef;
+}
+
+.contenedorFormularioContacto img {
+    z-index: -5;
+    position: absolute;
+    top: 100px;
+    left: 0;
+    right: 0;
+    width: 80%!important;
+    margin: 0px auto;
+}
+
+.contenedorFormularioContacto .container {
+    border: 3px solid #fff;
+    padding: 10px;
+}
+
+.btnEnviarMensaje, .btnEnviarMensaje:disabled{
+    color: #fff;
+    background-color: var(--color-principal)!important;
+    border-color: var(--color-secundario)!important;
+}
+
+.contenedorFormularioContacto form label {
+    color: var(--color-principal);
+    font-weight: bold;
+}
+
+.campoObligatorio {
+    font-style: italic;
+    color: red;
+    font-weight: bold;
+    font-size: 13px;
+}
+
+/* Estilos GENERAL {footer} 1 */
+
+footer {
+    background: #252525;
+}
+
+footer ul li {
+    color: #000;
+}
+
+footer a {
+    color: var(--color-principal); 
+}
+
+footer .numeros-telefonicos a:hover {
+    color: #fff!important;
+}
+
+footer h3 span {
+    color: #00a2ff!important;
+}
+
+.proveedorCV li a {
+    color: var(--color-principal)!important;
+}
+
+.header-card {
+    justify-content: center;
+}
+
+.contenedor-titulo-vacante, .tituloCV  {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contenedor-titulo-vacante li {
+    margin-bottom: 0px!important;
+}
+
+.contenedor-titulo-vacante, .contenedor-titulo-vacante .list-group-item.active, .tituloVacantes i,
+.tituloCV, .tituloCV h4 {
+    background-color: var(--color-principal);
+    border-color: var(--color-principal);
+    color: #fff!important;
+}
+
+.tituloCV h4 {
+    font-size: 1.4rem!important;
+    font-weight: bold!important;
+}
+
+.tituloVacantes {
+    font-weight: bold;
+    font-size: 23px!important;
+    text-align: center;
+}
+
+.contenidoFooter div {
+    background: var(--color-principal);
+    color: #fff;
+}
+
+.titulo-footer-card {
+    text-align: center;
+    font-weight: bold;
+    font-style: italic;
+}
+
+.card-footer {
+    width: 100%;
+    text-align: center;
+    background-color: rgb(25 25 25 / 82%)!important;
+    color: #fff;
+    padding: 10px;
+    bottom: 0;
+}
+
+.contenedor-img-ingenieria-civil {
+    width: 100%;
+    height: 120px;
+    background-color: rgba(144, 144, 144, 0.6);
+}
+
+.contenedor-img-ingenieria-civil img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.contenedor-vacantes ul li:nth-child(1) {
+    padding: 10px;
+    background: var(--color-principal);
+    color: #fff;
+    text-align: center;
+}
+
+.contenedor-vacantes ul li, .contenedor-vacantes-principal ul li {
+    font-size: 14px;
+    padding-right: 0px!important;
+    font-weight: 800;
+}
+
+.titulo-si-proveedor {
+    border-bottom: 5px solid var(--color-principal);
+    font-size: 1.4rem;
+    font-weight: bold;
+    text-align: center;
+}
+
+.footer-informacion h3, .horarios-atencion *, .numeros-telefonicos * {
+    color: #fff!important;
+    font-weight: bold!important;
+}
+
+.numeros-telefonicos {
+    font-weight: bold!important;
+    font-size: 15px!important;
+}
+
+.numeros-telefonicos li {
+    margin-bottom: 0px!important;
+    padding-bottom: 0px!important;
+}
+
+.redes-sociales * > *:hover {
+    color: #fff!important;
+}
+
+.footer-informacion h3 span, .links.paginasWeb li a {
+    color: #fff;
+}
+
+.contenedor-servicios {
+    background-color: #e3e3e3;
+}
+
+.contenedor-servicios div p {
+    padding: 15px;
+    background-color: #f7941e;
+    color: #fff;
+    cursor: pointer;
+}
+
+.contenedor-servicios div p:nth-child(odd):hover {
+    transform: rotate(5deg);
+}
+
+.contenedor-servicios div p:nth-child(even):hover {
+    transform: rotate(-5deg);
+}
+
+.contenedor-personal h3 {
+    font-size: 1.8rem!important;
+}
+
+/* Estilos GENERAL {footer} 0 */
+
+@media (max-width:350px) {
+    
+    .fb-page span {
+        overflow: hidden;
+    }
+
+    .fb-page iframe {
+        width: 80%!important;
+    }
+
+}
+
+@media (max-width:375px) {
+
+    .subInformacion {
+        padding: 0px!important;
+    }
+
+    .subInformacion div, .carousel-caption h1 {
+        font-size: 15px;
+    }
+
+}
+
+@media (max-width:731px) {
+
+    .carousel-caption {
+        position: relative;
+        left: 0!important;
+        right: 0!important;
+    }
+    
+}
+
+@media (max-width:827px) {
+
+    .subInformacion div, .carousel-caption h1 {
+        font-size: 30px;
+    }
+
+}
+
+/* Menú */
+@media (max-width:830px) {
+
+    .menu-movil, .menu-activo {
+        display: block!important;
+    }
+
+}
+
+@media (max-width:991px) {
+    
+    .navegacion-principal {
+        display: block!important;
+    }
+
 }
