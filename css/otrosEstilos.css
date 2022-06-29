@@ -15,6 +15,10 @@
     object-fit: cover;
 }
 
+.contenedor-imagen img {
+    height: 100%;
+}
+
 .contenedor-obras-atiende .fa-paper-plane {
     color: #054970;
 }
