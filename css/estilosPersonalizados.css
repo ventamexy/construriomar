@@ -418,6 +418,10 @@ footer h3 span {
     font-size: 1.8rem!important;
 }
 
+.pr-0 {
+    padding-right: 0px!important;
+}
+
 /* Estilos GENERAL {footer} 0 */
 
 @media (max-width:350px) {
