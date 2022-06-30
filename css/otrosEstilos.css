@@ -22,3 +22,9 @@
 .contenedor-obras-atiende .fa-paper-plane {
     color: #054970;
 }
+
+.contenedor-experiencia div > div {
+    background-color: #054970;
+    color: #fff;
+    border: 1px solid #fff;
+}

@@ -84,7 +84,6 @@ $(document).on("click", ".irArriba", function(){
     });
 });
 
-
 // /////////////////////////////////////////////////////////////////
 
 // var api = "AIzaSyCeSzprwFmUOSsAIf36sT9hONLvf3ReD_4";

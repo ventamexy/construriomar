@@ -1,8 +1,11 @@
 window.addEventListener('DOMContentLoaded', function() {
 
-    window.addEventListener('load', function() {
-        document.querySelector(".seccion-oculto").classList.add("d-none");
-    });
+    let seccionOculta = document.querySelector(".seccion-oculto");
+    if ( seccionOculta != null ) {
+        window.addEventListener('load', function() {
+            seccionOculta.classList.add("d-none");
+        });
+    }
 
     let totalImagenesMostrar = 3;
     if ( window.matchMedia("(max-width: 858px)" ).matches) {
