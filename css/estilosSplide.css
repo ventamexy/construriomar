@@ -1,0 +1,43 @@
+.splide__slide {
+    width: 100%!important;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    position: relative;
+    padding: 25px!important;
+    margin: 0px 5px;
+}
+
+.splide__slide img {
+    margin-bottom: 50px;
+}
+
+.splide__slide .titulo-cliente {
+    position: absolute;
+    bottom: 0;
+}
+
+.splide__slide div {
+    width: 100%;
+    padding: 10px;
+    background-color: var(--color-principal);
+    color: #fff;
+    font-size: 20px;
+}
+
+.splide__track {
+    padding: 30px!important;
+}
+
+.splide__slide img {
+    width: 300px!important;
+}
+
+.splide__arrow, .splide__pagination__page.is-active {
+    background-color: var(--color-principal)!important;
+}
+
+.splide__arrow svg {
+    fill: #fff!important;
+}
