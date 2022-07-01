@@ -67,3 +67,9 @@
     }
 
 }
+
+.titulo-normal {
+    background: #054970;
+    color: #fff!important;
+    font-weight: bold;
+}
