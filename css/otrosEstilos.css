@@ -28,3 +28,42 @@
     color: #fff;
     border: 1px solid #fff;
 }
+
+.contenedor-pozos div > div {
+    background-color: #132c3a;
+    color: #fff;
+    font-weight: bold;
+    margin-bottom: 3px;
+}
+
+.contenedor-pozos div > div:hover {
+    animation-name: saltar;
+    animation-timing-function: ease-out;
+}
+
+.informacion-sub-edificacion > div {
+    text-align: center;
+    background-color: #132c3a;
+    color: #fff;
+    padding: 15px;
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    border-right: 3px solid #fff;
+}
+
+.informacion-sub-edificacion > div span {
+    border-bottom: 3px solid #fff;
+}
+
+@keyframes saltar {
+
+    0% {
+        transform: rotate(40deg);
+    }
+
+    100% {
+        transform: rotate(100deg);
+    }
+
+}
