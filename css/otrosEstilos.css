@@ -73,3 +73,8 @@
     color: #fff!important;
     font-weight: bold;
 }
+
+.contenedor-estudios-ingenieria .list-group-item.active {
+    background-color: #fd7000!important;
+    border-color: #fd7000!important;
+}
