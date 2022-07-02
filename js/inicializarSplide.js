@@ -13,7 +13,7 @@ window.addEventListener('DOMContentLoaded', function() {
     }
 
     let objPropiedades = {
-        autoplay: true, 
+        autoplay: false, 
         keyboard: true,
         wheel:true,
         // By number (px)
