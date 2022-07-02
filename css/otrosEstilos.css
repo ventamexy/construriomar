@@ -57,6 +57,10 @@
     border-bottom: 3px solid #fff;
 }
 
+.b-b-naranja-5px {
+    border-bottom: 5px solid #fd7000;
+}
+
 @keyframes saltar {
 
     0% {
