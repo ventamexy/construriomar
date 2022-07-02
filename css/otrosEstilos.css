@@ -61,6 +61,10 @@
     border-bottom: 5px solid #fd7000;
 }
 
+.b-b-white-3px {
+    border-bottom: 3px solid #fff!important;
+}
+
 @keyframes saltar {
 
     0% {
@@ -81,7 +85,7 @@
 
 .contenedor-estudios-ingenieria .list-group-item.active {
     background-color: #fd7000!important;
-    border-color: #fd7000!important;
+    border-color: #fd7000;
 }
 
 .titulo-fondo-estandar {
