@@ -13,7 +13,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ConstruRioMar</title>
+    <title>Trabajos realizad - ConstruRioMar</title>
     <link rel="icon" type="image/png" href="img/title.png">
     <link rel="apple-touch-icon" href="apple-touch-icon.png">
     <!-- Iconos -->
@@ -28,11 +28,18 @@
     <link rel="stylesheet" href="css/colorbox.css">
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/otrosEstilos.css">
+    <link rel="stylesheet" href="css/estilosPersonalizados.css">
     <link rel="stylesheet" href="css/carousel.css">
-    <link rel="stylesheet" href="css/photo.css">
     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"/>
     <link rel="stylesheet" href="css/librerias/bootstrap/dist/css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/otrosEstilos.css">
+    <!-- Galería -->
+    <link rel="stylesheet" href="css/photoswipe.css">
+    <link rel="stylesheet" href="css/photoswipe-dynamic-caption-plugin.css">
+    <link rel="stylesheet" href="css/otrosEstilosPhotoSwipe.css">
+    <!-- Slider (Carrusel) - splidejs -->
+    <link rel="stylesheet" href="assets/splidejs/splide/dist/css/splide.min.css">
+    <link rel="stylesheet" href="assets/splidejs/splide/dist/css/themes/splide-default.min.css">
+    <link rel="stylesheet" href="css/estilosSplide.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
     <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
     <!-- Global site tag (gtag.js) - Google Analytics -->
@@ -95,110 +102,330 @@
         </div>
     </nav>
     <section class="seccion" style="background-color: black;"></section>
-    <section class="seccion">
-        <div class="contenedor">
-            <h1 class="text-uppercase text-center titulo-principal b-b-3px-red">Construcción Civil</h1>
-            <div class="container-fluid">
-                <div class="row">
-                    <div class="column">
-                        <img src="img/galeria/10.jpg">
-                        <img src="img/galeria/construccion_6.webp">
-                        <img src="img/galeria/construccion_4.webp">
-                        <img src="img/galeria/construccion_5.webp">
-                    </div>
-                    <div class="column">
-                        <img src="img/galeria/1.JPG">
-                        <img src="img/galeria/2.1.jpg">
-                        <img src="img/galeria/2.2.jpg">
-                        <img src="img/galeria/2.3.jpg">
-                    </div>
-                    <div class="column">
-                        <img src="img/construccion/construccion_civil_1.webp">
-                        <img src="img/galeria/construccion_3.webp">
-                        <img src="img/galeria/construccion_1.webp">
-                        <img src="img/galeria/construccion_2.webp">
-                    </div>
-                    <div class="column">
-                        <img src="img/galeria/imagen_7.jpg">
-                        <img src="img/galeria/imagen_8.jpg">
-                    </div>
+    <main>
+        <div class="pswp-gallery container my-5 align-items-stretch" id="gallery">
+            <div class="row col-12 col-md-4">
+                <div class="pswp-gallery__item">
+                    <a href="img/galeria/10.jpg" data-pswp-width="1669" data-pswp-height="2500"
+                        target="_blank">
+                        <img src="img/galeria/10.jpg" alt="Imagen 1" />
+                    </a>
                 </div>
             </div>
-        </div>
-    </section>
-    <!-- </section> -->
-    <section class="seccion">
-        <div class="contenedor">
-            <h2>Estructuras Metálicas</h2>
-            <div class="container-fluid">
-                <div class="row">
-                    <div class="column">
-                        <img src="img/galeria/estructuras_metalicas/arcotecho.webp">
-                        <img src="img/galeria/estructuras_metalicas/estrucutura_metalica.jpg">
-                        <img src="img/galeria/estructuras_metalicas/estrucutura_metalica_header.jpg">
-                    </div>
-                    <div class="column">
-                        <img src="img/galeria/estructuras_metalicas/techos.webp">
-                        <img src="img/estructuras/estructura_1.webp">
-                        <img src="img/estructuras/03.jpg">
-                    </div>
-                    <div class="column">
-                        <img src="img/galeria/estructuras_metalicas/metal.jpg">
-                        <img src="img/estructuras/05.jpg">
-                        <img src="img/galeria/estructuras_metalicas/plataformas_metalicas.webp">
-                    </div>
+            <div class="row col-12 col-md-4">
+                <div class="pswp-gallery__item">
+                    <a href="img/galeria/construccion_6.webp" data-pswp-width="1669" data-pswp-height="2500"
+                        target="_blank">
+                        <img src="img/galeria/construccion_6.webp" alt="Imagen 1" />
+                    </a>
                 </div>
             </div>
-        </div>
-    </section>
-    <section class="seccion">
-        <div class="contenedor">
-            <h2>Mantenimiento e Instalación</h2>
-            <div class="container-fluid">
-                <div class="row">
-                    <div class="column">
-                        <img src="img/galeria/mantenimiento_instalacion/instalacion_maquina_industrial.webp">
-                        <img src="img/galeria/mantenimiento_instalacion/mantenimiento_1.webp" alt="">
-                    </div>
-                    <div class="column">
-                        <img src="img/galeria/mantenimiento_instalacion/mantenimiento_2.webp">
-                        <img src="img/mantenimientos/mantenimiento_2.webp">
-                    </div>
-                    <div class="column">
-                        <img src="img/mantenimientos/mantenimiento.webp">
-                        <img src="img/galeria/mantenimiento_instalacion/mantenimiento_maquinaria.webp">
-                    </div>
+            <div class="row col-12 col-md-4">
+                <div class="pswp-gallery__item">
+                    <a href="img/galeria/construccion_4.webp" data-pswp-width="1669" data-pswp-height="2500"
+                        target="_blank">
+                        <img src="img/galeria/construccion_4.webp" alt="Imagen 1" />
+                    </a>
                 </div>
             </div>
-        </div>
-    </section>
-    <section class="seccion d-none">
-        <div class="contenedor">
-            <h2>pozos</h2>
-            <div class="container-fluid">
-                <div class="row">
-                    <div class="column">
-                        <img src="img/pozos/03.jpg">
-                        <img src="img/pozos/06.jpg">
-                        <img src="img/pozos/07.jpg">
-                    </div>
-                    <div class="column">
-                        <img src="img/pozos/08.jpg">
-                        <img src="img/pozos/09.jpg">
-                        <img src="img/pozos/11.jpg">
-                    </div>
-                    <div class="column">
-                        <img src="img/pozos/13.jpg">
-                        <img src="img/pozos/14.jpg">
-                        <img src="img/pozos/15.jpg">
-                        <img src="img/pozos/16.jpg">
-                        <img src="img/pozos/17.jpg">
-                    </div>
+            <div class="row col-12 col-md-4">
+                <div class="pswp-gallery__item">
+                    <a href="img/galeria/construccion_5.webp" data-pswp-width="1669" data-pswp-height="2500"
+                        target="_blank">
+                        <img src="img/galeria/construccion_5.webp" alt="Imagen 1" />
+                    </a>
                 </div>
             </div>
-        </div>
-    </section>
-
+            <div class="row col-12 col-md-4">
+                <div class="pswp-gallery__item">
+                    <a href="img/galeria/1.jpg" data-pswp-width="1669" data-pswp-height="2500"
+                        target="_blank">
+                        <img src="img/galeria/1.jpg" alt="Imagen 1" />
+                    </a>
+                </div>
+            </div>
+            <div class="row col-12 col-md-4">
+                <div class="pswp-gallery__item">
+                    <a href="img/galeria/2.1.jpg" data-pswp-width="1669" data-pswp-height="2500"
+                        target="_blank">
+                        <img src="img/galeria/2.1.jpg" alt="Imagen 1" />
+                    </a>
+                </div>
+            </div>
+            <div class="row col-12 col-md-4">
+                <div class="pswp-gallery__item">
+                    <a href="img/galeria/2.2.jpg" data-pswp-width="1669" data-pswp-height="2500"
+                        target="_blank">
+                        <img src="img/galeria/2.2.jpg" alt="Imagen 1" />
+                    </a>
+                </div>
+            </div>
+            <div class="row col-12 col-md-4">
+                <div class="pswp-gallery__item">
+                    <a href="img/galeria/2.3.jpg" data-pswp-width="1669" data-pswp-height="2500"
+                        target="_blank">
+                        <img src="img/galeria/2.3.jpg" alt="Imagen 1" />
+                    </a>
+                </div>
+            </div>
+            <div class="row col-12 col-md-4">
+                <div class="pswp-gallery__item">
+                    <a href="img/construccion/construccion_civil_1.webp" data-pswp-width="1669" data-pswp-height="2500"
+                        target="_blank">
+                        <img src="img/construccion/construccion_civil_1.webp" alt="Imagen 1" />
+                    </a>
+                </div>
+            </div>
+            <div class="row col-12 col-md-4">
+                <div class="pswp-gallery__item">
+                    <a href="img/galeria/construccion_3.webp" data-pswp-width="1669" data-pswp-height="2500"
+                        target="_blank">
+                        <img src="img/galeria/construccion_3.webp" alt="Imagen 1" />
+                    </a>
+                </div>
+            </div>
+            <div class="row col-12 col-md-4">
+                <div class="pswp-gallery__item">
+                    <a href="img/galeria/construccion_1.webp" data-pswp-width="1669" data-pswp-height="2500"
+                        target="_blank">
+                        <img src="img/galeria/construccion_1.webp" alt="Imagen 1" />
+                    </a>
+                </div>
+            </div>
+            <div class="row col-12 col-md-4">
+                <div class="pswp-gallery__item">
+                    <a href="img/galeria/construccion_2.webp" data-pswp-width="1669" data-pswp-height="2500"
+                        target="_blank">
+                        <img src="img/galeria/construccion_2.webp" alt="Imagen 1" />
+                    </a>
+                </div>
+            </div>
+            <div class="row col-12 col-md-4">
+                <div class="pswp-gallery__item">
+                    <a href="img/galeria/imagen_7.jpg" data-pswp-width="1669" data-pswp-height="2500"
+                        target="_blank">
+                        <img src="img/galeria/imagen_7.jpg" alt="Imagen 1" />
+                    </a>
+                </div>
+            </div>
+            <div class="row col-12 col-md-4">
+                <div class="pswp-gallery__item">
+                    <a href="img/galeria/imagen_8.jpg" data-pswp-width="1669" data-pswp-height="2500"
+                        target="_blank">
+                        <img src="img/galeria/imagen_8.jpg" alt="Imagen 1" />
+                    </a>
+                </div>
+            </div>
+            <div class="row col-12 col-md-4">
+                <div class="pswp-gallery__item">
+                    <a href="img/galeria/estructuras_metalicas/arcotecho.webp" data-pswp-width="1669" data-pswp-height="2500"
+                        target="_blank">
+                        <img src="img/galeria/estructuras_metalicas/arcotecho.webp" alt="Imagen 1" />
+                    </a>
+                </div>
+            </div>
+            <div class="row col-12 col-md-4">
+                <div class="pswp-gallery__item">
+                    <a href="img/galeria/estructuras_metalicas/estrucutura_metalica.jpg" data-pswp-width="1669" data-pswp-height="2500"
+                        target="_blank">
+                        <img src="img/galeria/estructuras_metalicas/estrucutura_metalica.jpg" alt="Imagen 1" />
+                    </a>
+                </div>
+            </div>
+            <div class="row col-12 col-md-4">
+                <div class="pswp-gallery__item">
+                    <a href="img/galeria/estructuras_metalicas/estrucutura_metalica_header.jpg" data-pswp-width="1669" data-pswp-height="2500"
+                        target="_blank">
+                        <img src="img/galeria/estructuras_metalicas/estrucutura_metalica_header.jpg" alt="Imagen 1" />
+                    </a>
+                </div>
+            </div>
+            <div class="row col-12 col-md-4">
+                <div class="pswp-gallery__item">
+                    <a href="img/galeria/estructuras_metalicas/techos.webp" data-pswp-width="1669" data-pswp-height="2500"
+                        target="_blank">
+                        <img src="img/galeria/estructuras_metalicas/techos.webp" alt="Imagen 1" />
+                    </a>
+                </div>
+            </div>
+            <div class="row col-12 col-md-4">
+                <div class="pswp-gallery__item">
+                    <a href="img/estructuras/estructura_1.webp" data-pswp-width="1669" data-pswp-height="2500"
+                        target="_blank">
+                        <img src="img/estructuras/estructura_1.webp" alt="Imagen 1" />
+                    </a>
+                </div>
+            </div>
+            <div class="row col-12 col-md-4">
+                <div class="pswp-gallery__item">
+                    <a href="img/estructuras/03.jpg" data-pswp-width="1669" data-pswp-height="2500"
+                        target="_blank">
+                        <img src="img/estructuras/03.jpg" alt="Imagen 1" />
+                    </a>
+                </div>
+            </div>
+            <div class="row col-12 col-md-4">
+                <div class="pswp-gallery__item">
+                    <a href="img/galeria/estructuras_metalicas/metal.jpg" data-pswp-width="1669" data-pswp-height="2500"
+                        target="_blank">
+                        <img src="img/galeria/estructuras_metalicas/metal.jpg" alt="Imagen 1" />
+                    </a>
+                </div>
+            </div>
+            <div class="row col-12 col-md-4">
+                <div class="pswp-gallery__item">
+                    <a href="img/estructuras/05.jpg" data-pswp-width="1669" data-pswp-height="2500"
+                        target="_blank">
+                        <img src="img/estructuras/05.jpg" alt="Imagen 1" />
+                    </a>
+                </div>
+            </div>
+            <div class="row col-12 col-md-4">
+                <div class="pswp-gallery__item">
+                    <a href="img/galeria/estructuras_metalicas/plataformas_metalicas.webp" data-pswp-width="1669" data-pswp-height="2500"
+                        target="_blank">
+                        <img src="img/galeria/estructuras_metalicas/plataformas_metalicas.webp" alt="Imagen 1" />
+                    </a>
+                </div>
+            </div>
+            <div class="row col-12 col-md-4">
+                <div class="pswp-gallery__item">
+                    <a href="img/galeria/mantenimiento_instalacion/instalacion_maquina_industrial.webp" data-pswp-width="1669" data-pswp-height="2500"
+                        target="_blank">
+                        <img src="img/galeria/mantenimiento_instalacion/instalacion_maquina_industrial.webp" alt="Imagen 1" />
+                    </a>
+                </div>
+            </div>
+            <div class="row col-12 col-md-4">
+                <div class="pswp-gallery__item">
+                    <a href="img/galeria/mantenimiento_instalacion/mantenimiento_1.webp" data-pswp-width="1669" data-pswp-height="2500"
+                        target="_blank">
+                        <img src="img/galeria/mantenimiento_instalacion/mantenimiento_1.webp" alt="Imagen 1" />
+                    </a>
+                </div>
+            </div>
+            <div class="row col-12 col-md-4">
+                <div class="pswp-gallery__item">
+                    <a href="img/galeria/mantenimiento_instalacion/mantenimiento_2.webp" data-pswp-width="1669" data-pswp-height="2500"
+                        target="_blank">
+                        <img src="img/galeria/mantenimiento_instalacion/mantenimiento_2.webp" alt="Imagen 1" />
+                    </a>
+                </div>
+            </div>
+            <div class="row col-12 col-md-4">
+                <div class="pswp-gallery__item">
+                    <a href="img/mantenimientos/mantenimiento_2.webp" data-pswp-width="1669" data-pswp-height="2500"
+                        target="_blank">
+                        <img src="img/mantenimientos/mantenimiento_2.webp" alt="Imagen 1" />
+                    </a>
+                </div>
+            </div>
+            <div class="row col-12 col-md-4">
+                <div class="pswp-gallery__item">
+                    <a href="img/mantenimientos/mantenimiento.webp" data-pswp-width="1669" data-pswp-height="2500"
+                        target="_blank">
+                        <img src="img/mantenimientos/mantenimiento.webp" alt="Imagen 1" />
+                    </a>
+                </div>
+            </div>
+            <div class="row col-12 col-md-4">
+                <div class="pswp-gallery__item">
+                    <a href="img/galeria/mantenimiento_instalacion/mantenimiento_maquinaria.webp" data-pswp-width="1669" data-pswp-height="2500"
+                        target="_blank">
+                        <img src="img/galeria/mantenimiento_instalacion/mantenimiento_maquinaria.webp" alt="Imagen 1" />
+                    </a>
+                </div>
+            </div>
+            <div class="row col-12 col-md-4">
+                <div class="pswp-gallery__item">
+                    <a href="img/pozos/03.jpg" data-pswp-width="1669" data-pswp-height="2500"
+                        target="_blank">
+                        <img src="img/pozos/03.jpg" alt="Imagen 1" />
+                    </a>
+                </div>
+            </div>
+            <div class="row col-12 col-md-4">
+                <div class="pswp-gallery__item">
+                    <a href="img/pozos/06.jpg" data-pswp-width="1669" data-pswp-height="2500"
+                        target="_blank">
+                        <img src="img/pozos/06.jpg" alt="Imagen 1" />
+                    </a>
+                </div>
+            </div>
+            <div class="row col-12 col-md-4">
+                <div class="pswp-gallery__item">
+                    <a href="img/pozos/07.jpg" data-pswp-width="1669" data-pswp-height="2500"
+                        target="_blank">
+                        <img src="img/pozos/07.jpg" alt="Imagen 1" />
+                    </a>
+                </div>
+            </div>
+            <div class="row col-12 col-md-4">
+                <div class="pswp-gallery__item">
+                    <a href="img/pozos/08.jpg" data-pswp-width="1669" data-pswp-height="2500"
+                        target="_blank">
+                        <img src="img/pozos/08.jpg" alt="Imagen 1" />
+                    </a>
+                </div>
+            </div>
+            <div class="row col-12 col-md-4">
+                <div class="pswp-gallery__item">
+                    <a href="img/pozos/09.jpg" data-pswp-width="1669" data-pswp-height="2500"
+                        target="_blank">
+                        <img src="img/pozos/09.jpg" alt="Imagen 1" />
+                    </a>
+                </div>
+            </div>
+            <div class="row col-12 col-md-4">
+                <div class="pswp-gallery__item">
+                    <a href="img/pozos/11.jpg" data-pswp-width="1669" data-pswp-height="2500"
+                        target="_blank">
+                        <img src="img/pozos/11.jpg" alt="Imagen 1" />
+                    </a>
+                </div>
+            </div>
+            <div class="row col-12 col-md-4">
+                <div class="pswp-gallery__item">
+                    <a href="img/pozos/13.jpg" data-pswp-width="1669" data-pswp-height="2500"
+                        target="_blank">
+                        <img src="img/pozos/13.jpg" alt="Imagen 1" />
+                    </a>
+                </div>
+            </div>
+            <div class="row col-12 col-md-4">
+                <div class="pswp-gallery__item">
+                    <a href="img/pozos/14.jpg" data-pswp-width="1669" data-pswp-height="2500"
+                        target="_blank">
+                        <img src="img/pozos/14.jpg" alt="Imagen 1" />
+                    </a>
+                </div>
+            </div>
+            <div class="row col-12 col-md-4">
+                <div class="pswp-gallery__item">
+                    <a href="img/pozos/15.jpg" data-pswp-width="1669" data-pswp-height="2500"
+                        target="_blank">
+                        <img src="img/pozos/15.jpg" alt="Imagen 1" />
+                    </a>
+                </div>
+            </div>
+            <div class="row col-12 col-md-4">
+                <div class="pswp-gallery__item">
+                    <a href="img/pozos/16.jpg" data-pswp-width="1669" data-pswp-height="2500"
+                        target="_blank">
+                        <img src="img/pozos/16.jpg" alt="Imagen 1" />
+                    </a>
+                </div>
+            </div>
+            <div class="row col-12 col-md-4">
+                <div class="pswp-gallery__item">
+                    <a href="img/pozos/17.jpg" data-pswp-width="1669" data-pswp-height="2500"
+                        target="_blank">
+                        <img src="img/pozos/17.jpg" alt="Imagen 1" />
+                    </a>
+                </div>
+            </div>
+        </div>            
+    </main>
 	<footer class="site-footer">
         <div class="container">
             <div class="row mb-3">
@@ -792,6 +1019,7 @@
 		<i class="fa fa-arrow-down" aria-hidden="true"></i>
 	</button>
     <script src="js/librerias/jquery/dist/jquery.min.js"></script>
+    <script src="css/librerias/bootstrap/dist/js/bootstrap.min.js"></script>
     <script src="js/plugins.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-animateNumber/0.0.14/jquery.animateNumber.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.countdown/2.2.0/jquery.countdown.min.js"></script>
@@ -801,12 +1029,13 @@
     <script src="js/main.js"></script>
     <script src="js/carousel.js"></script>
     <script src="js/cotizador.js"></script>
+    <!-- Gallery -->
+    <script type="module" src="js/instanciaPhotoSwipe.js"></script>
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCeSzprwFmUOSsAIf36sT9hONLvf3ReD_4&callback=initMap"
     async defer></script>
     <div id="fb-root"></div>
     <script async defer crossorigin="anonymous"
     src="https://connect.facebook.net/es_ES/sdk.js#xfbml=1&version=v9.0&appId=502654373424425&autoLogAppEvents=1"
     nonce="I0coc6CJ"></script>
-    <script src="css/librerias/bootstrap/dist/js/bootstrap.min.js"></script>
 </body>
 </html>
