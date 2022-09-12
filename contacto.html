@@ -30,21 +30,13 @@
     <link rel="stylesheet" href="css/otrosEstilos.css">
     <link rel="stylesheet" href="css/estilosPersonalizados.css">
     <link rel="stylesheet" href="css/carousel.css">
-    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"/>
     <link rel="stylesheet" href="css/librerias/bootstrap/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="css/otrosEstilos.css">
     <link rel="stylesheet" href="css/estilosFormularioContacto.css">
     <link rel="stylesheet" href="css/spinnerCarga.css">
+    <link rel="stylesheet" href="css/estilosReCaptcha.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
-    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-V9RQCLGYFL"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag() { dataLayer.push(arguments); }
-        gtag('js', new Date());
-        gtag('config', 'G-V9RQCLGYFL');
-    </script>
+    <script src="https://www.google.com/recaptcha/api.js"></script>
 </head>
 <body class="registro">
     <nav class="navbar navbar-expand-lg navbar-light bg-light p-3 flex-wrap b-b-3px-white">
@@ -153,6 +145,15 @@
                             <span class="campoObligatorio">Campo obligatorio</span>
                         </div>
                     </div>
+                    <div class="row d-flex align-items-center position-relative">
+                        <div class="g-recaptcha" data-sitekey="6Ld05vEhAAAAAH3ElHgXZ2MKpzDA9nI-4i-hPJi1"></div>
+                        <div class="col-1 position-absolute contenedor-boton">
+                            <button class="reload-captcha" type="button">
+                                <i class="fa fa-refresh"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <br/>
                     <div class="row justify-content-center">
                         <button 
                         class="btn btn-success btnEnviarPrecalificacion" 
@@ -804,6 +805,7 @@
     <script src="js/main.js"></script>
     <script src="js/carousel.js"></script>
     <script src="js/cotizador.js"></script>
+    <script src="js/funcionesGenerales.js"></script>
     <script type="module" src="/js/server/enviarEmail.js"></script>
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCeSzprwFmUOSsAIf36sT9hONLvf3ReD_4&callback=initMap"
     async defer></script>
